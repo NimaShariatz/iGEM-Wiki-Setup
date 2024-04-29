@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css?family=Signika");
+
+
+
+
+
+
+
+
+/* for scrollbar*/
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #695f5b96;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2a2a2a1e;
+}
+/* for scrollbar*/
+
+
+
+
+
+ol {
+  list-style-type: none;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  line-height: 1.5;
+  font-family: "Signika", cursive;
+  background-color: #171717;
+  color: #1c1c1c;
+}
+
+a{
+  color:white;
+  font-size: 20px;
+}
+
+
+/*The following is for the menu and 'X' icon*/
+#check {
+  display: none;
+}
+#check + label {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#check + label::before {
+  position: absolute;
+  content: "";
+  top: 0em;
+  left: -1em;
+  width: 73vw;
+  height: 100vh;
+  background-color: rgba(33, 33, 61, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: 120ms ease-in;
+}
+
+
+
+#check + label svg {
+  margin-right: 0.5em;
+}
+#check + label svg path {
+  transform-origin: 35% 50%;
+  transition: 166ms cubic-bezier(0.06, 0.63, 0.91, 0.66);
+}
+#check:checked + label ~ aside {
+  transform: none;
+}
+#check:checked + label::before {
+  left: calc(25vw - 1em);
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#check:checked + label svg #one {
+  transform: rotate(45deg);
+  stroke:#f8cc04;
+}
+#check:checked + label svg #two {
+  transform: rotate(-45deg);
+  stroke:#f8cc04;
+}
+#check:checked + label ~ article {
+  z-index: -1;
+  transform: translateX(25vw) scale(0.7);
+  border-radius: 0.25em;
+  user-select: none;
+  pointer-events: none;
+}
+/*The above is for the menu and 'X' icon*/
+
+aside,
+article {
+  padding: 2.5em 1em 0.25em;/*this is for spacing of the menu options*/
+  transition: all 320ms /*time it takes for the transition of the menu to show up to occur*/
+}
+
+aside {
+  position: absolute;
+  width: 25vw;/*How wide the menu should be!*/
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1C3144;
+  transform: translateX(-100%);
+}
+
+
+@media (max-width: 800px) {/*So when the width of screen is 800px or less: change the following classes. USEFUL FOR MOBILE-VIEW*/
+  aside {
+    width: 60vw;
+  }
+
+  a{
+    color:white;
+    font-size: 15px;
+  }
+
+
+  #check + label::before {
+    position: absolute;
+    content: "";
+    top: 0em;
+    left: 0em;
+    width: 0vw;
+    height: 0vh;
+    background-color: rgba(33, 33, 61, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 250ms linear;
+  }
+
+
+}
+
+article {
+  position: relative;
+  transform-origin: 10% 50%;
+  width: 100%;
+  background-color: #ffffff;
+}
+article .wrapper {
+  margin: auto;
+  padding: 2em;
+  max-width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+/*The following are a series of hover effects for the menu. specifically the horizontal line on hover effect*/
+.menu_item-purple, .menu_item-cyan, .menu_item-yellow, .menu_item-blue, .menu_item-red    {
+  position: relative;
+  text-decoration: none;
+}
+
+.menu_item-purple::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;/*how thick the horizontal line effect is*/
+  border-radius: 2px;
+  background-color: #9b59b6;
+  bottom: -2px;/*verticle spacing of the horizontal line effect*/
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: .4s ease-in-out;
+  
+}
+
+.menu_item-cyan::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;/*how thick the horizontal line effect is*/
+  border-radius: 2px;
+  background-color: #86e2d5;
+  bottom: -2px;/*verticle spacing of the horizontal line effect*/
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: .4s ease-in-out;
+  
+}
+
+.menu_item-yellow::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;/*how thick the horizontal line effect is*/
+  border-radius: 2px;
+  background-color: #f5ab35;
+  bottom: -2px;/*verticle spacing of the horizontal line effect*/
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: .4s ease-in-out;
+  
+}
+
+.menu_item-blue::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;/*how thick the horizontal line effect is*/
+  border-radius: 2px;
+  background-color: #1e8bc3;
+  bottom: -2px;/*verticle spacing of the horizontal line effect*/
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: .4s ease-in-out;
+  
+}
+
+.menu_item-red::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;/*how thick the horizontal line effect is*/
+  border-radius: 2px;
+  background-color: #e26a6a;
+  bottom: -2px;/*verticle spacing of the horizontal line effect*/
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: .4s ease-in-out;
+  
+}
+
+.menu_item-purple:hover::before, .menu_item-cyan:hover::before, .menu_item-yellow:hover::before, .menu_item-blue:hover::before, .menu_item-red:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+/*The following are a series of hover effects for the menu. specifically the horizontal line on hover effect*/
+
+
+
+
+.sub_menu {
+    padding: 10px 0 10px 10px;
+    border-style:solid;
+    border-width: 0 0 0 10px;
+    
+}
+
+.sub_menu:nth-child(1){
+  border-color: #9b59b6;
+}
+.sub_menu:nth-child(2){
+  border-color: #86e2d5;
+}
+.sub_menu:nth-child(3){
+  border-color: #f5ab35;
+}
+.sub_menu:nth-child(4){
+  border-color: #1e8bc3;
+}
+.sub_menu:nth-child(5){
+  border-color: #e26a6a;
+}
+
+
