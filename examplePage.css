@@ -44,13 +44,17 @@ body {
   display: flex;
   line-height: 1.5;
   font-family: "Signika", cursive;
-  background-color: #171717;
+  background-color: #1c1c1c;
   color: #1c1c1c;
 }
 
-a{
-  color:white;
-  font-size: 20px;
+.mobile_menuLink{
+  color:#1c1c1c;
+  font-weight: bold;
+}
+
+svg{
+    color:rgb(0, 0, 0);
 }
 
 
@@ -59,107 +63,97 @@ a{
   display: none;
 }
 #check + label {
-  position: absolute;
-  top: 0em;
-  left: 1em;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
+    position: absolute;
+    top: 0.2em;
+    left: 0.2em;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display:none;/*TO MAKE MENU BUTTON DISSAPPEAR FOR DESKTOP VIEW*/
+    
 
-#check + label::before {
-  position: absolute;
-  content: "";
-  top: 0em;
-  left: 0em;
-  width: 75vw;
-  height: 100vh;
-  background-color: rgba(33, 33, 61, 0.2);
-  visibility: hidden;
-  opacity: 0;
-  transition: 120ms ease-in;
 }
-
 
 
 #check + label svg {
-  margin-right: 0.5em;
+    margin-right: 0.5em;
 }
 #check + label svg path {
-  transform-origin: 35% 50%;
-  transition: 166ms cubic-bezier(0.06, 0.63, 0.91, 0.66);
+    transform-origin: 35% 50%;
+    transition: 166ms cubic-bezier(0.06, 0.63, 0.91, 0.66);
 }
 #check:checked + label ~ aside {
-  transform: none;
+    transform: none;
 }
 #check:checked + label::before {
-  left: calc(25vw - 1em);
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
+    left: calc(25vw - 1em);
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
 }
 
 
 #check:checked + label svg #one {
-  transform: rotate(45deg);
-  stroke:#f8cc04;
+    transform: rotate(45deg);
+    stroke:#f8cc04;
 }
 #check:checked + label svg #two {
-  transform: rotate(-45deg);
-  stroke:#f8cc04;
+    transform: rotate(-45deg);
+    stroke:#f8cc04;
 }
 #check:checked + label ~ article {
-  z-index: -1;
-  transform: translateX(25vw) scale(0.7);
-  border-radius: 0.25em;
-  user-select: none;
-  pointer-events: none;
+    z-index: -1;
+    transform: translateX(25vw) scale(0.7);
+    border-radius: 0.25em;
+    user-select: none;
+    pointer-events: none;
 }
 /*The above is for the menu and 'X' icon*/
 
 aside,
 article {
-  padding: 2.5em 1em 0.25em;/*this is for spacing of the menu options*/
-  transition: all 320ms /*time it takes for the transition of the menu to show up to occur*/
+
+    transition: all 320ms /*time it takes for the transition of the menu to show up to occur*/
 }
 
 aside {
-  position: absolute;
-  width: 25vw;/*How wide the menu should be!*/
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #1C3144;
-  transform: translateX(-100%);
+    position: absolute;
+    width: 25vw;/*How wide the menu should be!*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    transform: translateX(-100%);
+
 }
 
 
 @media (max-width: 800px) {/*So when the width of screen is 800px or less: change the following classes. USEFUL FOR MOBILE-VIEW*/
   aside {
-    width: 60vw;
+    width: 40vw;
   }
 
   a{
-    color:white;
     font-size: 15px;
   }
 
+  #check + label {
+        position: absolute;
+        top: 0.2em;
+        left: 0.2em;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        display:block;
+    }
+    
 
-  #check + label::before {
-    position: absolute;
-    content: "";
-    top: 0em;
-    left: 0em;
-    width: 0vw;
-    height: 0vh;
-    background-color: rgba(33, 33, 61, 0.2);
-    visibility: hidden;
-    opacity: 0;
-    transition: all 250ms linear;
-  }
-
+    .mega-menu-container{
+        display:none;
+    }
 
 }
 
@@ -271,9 +265,6 @@ article .wrapper {
 }
 
 
-/*The following are a series of hover effects for the menu. specifically the horizontal line on hover effect*/
-
-
 
 
 .sub_menu {
@@ -299,4 +290,168 @@ article .wrapper {
   border-color: #e26a6a;
 }
 
+
+/*The following are a series of hover effects for the menu. specifically the horizontal line on hover effect*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*THE FOLLOWING BELOW IS EXCLUSIVELY FOR THE TRADITIONAL HEADER STYLE MENU*/
+
+.mega-menu-container{
+    color:#1c1c1c;/*font color*/
+}
+
+
+.mega-menu-container,
+.mega-menu-container *{/* the star means anything thats inside that container. Very useful!!!*/
+    box-sizing: border-box;
+}
+
+.mega-menu-container a{
+    text-decoration: none;/*set text decoration to 'none' so you dont have any underlines*/
+    color:#1c1c1c;/*font color*/
+    display:inline-block;
+}
+
+
+.mega-menu-container ul{
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+
+.mega-menu-container h4{
+    margin: 8px 0;
+}
+
+
+.mega-menu{
+    position:fixed;/*change to relative for header menu to NOT be sticky*/
+    left:0;
+    right:0;
+    max-width:100%;
+
+    box-shadow: 0 4px 30px -7px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
+
+    border-color:rgba(0, 0, 0, 0.2);/*border color of traditional header*/
+    border-style: solid;
+    border-width: 0 0 1px 0;/*only have a bottom border color*/
+    
+}
+
+
+.mega-menu > ul {
+    display:flex;
+    max-width:800px;
+    margin:0 auto;
+    justify-content: center; /*Horizontal alignment*/
+    align-items: center; /*verticle alignment*/
+    gap:32px;
+}
+
+
+.mega-menu-container .menu-title{
+    padding: 10px 16px;
+    font-weight: bold;
+}
+
+.mega-menu .menu-title{/*DELETE THIS AT THE END!!!!!!!!*/
+    position: relative;
+}
+
+
+
+.mega-menu ul li:hover > .menu-title::after {
+    height: 4px;
+    width:100%;
+}
+
+
+.has-submenu::after{
+    content: "+";
+    margin-left: -14px;
+}
+
+
+.mega-menu-container .submenu-container{
+    opacity:0;
+    position:absolute;
+    pointer-events: none;/*prevents us on clicking the submenus outside of the hover effect*/
+    top:45px;/*distance between popup and header*/
+    min-width: 460px;/*size of our dropdown*/
+    min-height: 600px;/*size of our dropdown*/
+    margin-left:-200px;/*what i used to try and center the dropdown div on hover. ok for now.*/
+    transform:translateY(10px);/*animation of hover menu*/
+    transition: all 200ms ease-in;/*animation of hover menu*/
+}
+
+.mega-menu .has-submenu:hover .submenu-container {
+    opacity:1;
+    pointer-events: auto;
+    transform: translateY(0);/*animation of hover menu*/
+    
+}
+
+
+.submenu .col-3 {
+    display:flex;
+    gap:32px;
+    border-top: 1px solid rgba(2,48,71,0.2);
+
+}
+
+
+.submenu {
+    background-color: white;
+    padding:16px 24px;
+    margin-top:10px;
+    left:0;
+    box-shadow: 0 4px 50px -7px rgba(0, 0, 0, 0.3);
+    border-color:rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width:1px;
+    border-radius: 3px;
+
+
+}
+
+
+.submenu .col-3 ul li{
+    padding:0;
+    padding-left:12px;
+    margin: 12px 0;/*margin for points in dropdown menu*/
+    position:relative;
+}
+
+
+
+.sub_menu h3{
+    margin: 10px 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*THE FOLLOWING ABOVE IS EXCLUSIVELY FOR THE TRADITIONAL HEADER STYLE MENU*/
 
