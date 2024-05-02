@@ -455,3 +455,12 @@ article .wrapper {
 
 /*THE FOLLOWING ABOVE IS EXCLUSIVELY FOR THE TRADITIONAL HEADER STYLE MENU*/
 
+
+#preloader{
+  background:#E3F4FD url(images/test.gif) no-repeat center;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
