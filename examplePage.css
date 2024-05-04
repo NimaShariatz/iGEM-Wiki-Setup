@@ -40,7 +40,7 @@ ol {
 body {
   margin: 0;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   line-height: 1.5;
   font-family: "Signika", cursive;
@@ -153,6 +153,13 @@ aside {
 
     .mega-menu-container{
         display:none;
+    }
+
+    body{
+      height: 100vh;
+    }
+    #progress-bar{
+      display: none;
     }
 
 }
@@ -455,12 +462,22 @@ article .wrapper {
 
 /*THE FOLLOWING ABOVE IS EXCLUSIVELY FOR THE TRADITIONAL HEADER STYLE MENU*/
 
-
+/*preloader*/
 #preloader{
   background:#E3F4FD url(images/test.gif) no-repeat center;
   background-size: 50%;
   height: 100vh;
   width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+/*progress bar*/
+#progress-bar{
+  --scrollProgress: 0%;
+  height: 3px;
+  width: var(--scrollProgress);
+  background-color: #111111;
   position: fixed;
   z-index: 100;
 }
