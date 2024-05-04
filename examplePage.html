@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="examplePage.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="progressBar.js"></script>
 </head><!--see https://freefrontend.com/css-off-canvas-menus/ */-->
 
 
@@ -11,6 +12,8 @@
 
 
 <body>
+
+    <div id="preloader"></div>
 
 
   <!--MENU STUFF FOR MOBILE STARTS HERE-->
@@ -154,7 +157,7 @@
 
                 <li>
 
-                    <a class="menu-title menu_item-yellow" href="#">AnotherLink</a>
+                    <a class="menu-title menu_item-yellow" href="loadingTestPage.html">AnotherLink</a>
 
                 </li>
 
@@ -225,7 +228,6 @@
                     </div>
 
 
-
                 </li>
                 <!--MENU 2-->
 
@@ -237,11 +239,9 @@
 
 
         </nav>
+        <div id="progress-bar"></div>
     </div>
 <!--MENU STUFF FOR DESKTOP STARTS HERE-->
-
-
-
 
 
 
@@ -288,5 +288,24 @@
     </div>
   </article>
 
+  <!-- preloader script -->
+  <script>
+    var loader = document.getElementById("preloader");
+
+    //Actual code:
+    // window.addEventListener("load", function(){
+    //     loader.style.display = "none";
+    // })
+
+    //NOTE: THe timeout is just to simulate how a loading page might work
+    window.addEventListener("load", function(){
+        setTimeout(function() {
+            loader.style.display = "none";
+        }, 2000);
+    });
+  </script>
+
   
 </body>
+
+</html>
