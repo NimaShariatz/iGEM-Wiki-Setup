@@ -46,6 +46,7 @@ body {
   font-family: "Signika", cursive;
   background-color: #1c1c1c;
   color: #1c1c1c;
+  font-size: 16px;
 }
 
 .mobile_menuLink{
@@ -159,8 +160,12 @@ aside {
     body{
       height: 100vh;
     }
-    #progress-bar{
+    #progress-bar{/*to make progress bar dissappear*/
       display: none;
+    }
+
+    .progressTracker{/*to make progress tracker dissappear*/
+      display:none;
     }
 
 }
@@ -175,10 +180,9 @@ article .wrapper {
   margin: auto;
   padding: 2em;
   max-width: 90%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display:flex;
+
+
 }
 
 
@@ -398,10 +402,11 @@ article .wrapper {
     pointer-events: none;/*prevents us on clicking the submenus outside of the hover effect*/
     top:45px;/*distance between popup and header*/
     min-width: 460px;/*size of our dropdown*/
-    min-height: 600px;/*size of our dropdown*/
+    min-height: 235px;/*size of our dropdown*/
     margin-left:-200px;/*what i used to try and center the dropdown div on hover. ok for now.*/
     transform:translateY(10px);/*animation of hover menu*/
     transition: all 200ms ease-in;/*animation of hover menu*/
+    /*background-color:red;*/
 }
 
 .mega-menu .has-submenu:hover .submenu-container {
@@ -446,15 +451,7 @@ article .wrapper {
 
 .sub_menu h3{
     margin: 10px 0;
-
-
 }
-
-
-
-
-
-
 
 
 
@@ -481,4 +478,19 @@ article .wrapper {
   background-color: #111111;
   position: fixed;
   z-index: 100;
+}
+
+
+
+
+.progressTracker{
+  margin-top:50px;
+  width:180px;
+  margin-right:50px;
+
+}
+
+.progressTracker_Link{
+  max-width:130px;
+
 }

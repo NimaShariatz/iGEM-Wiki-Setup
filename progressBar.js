@@ -6,7 +6,7 @@ function updateProgressBar() {
 
     //retire current scroll location
     var scrollSpot = article.scrollTop;
-    console.log("Scroll spot:", scrollSpot + " max scroll heigh ", scrollTotal);
+    //console.log("Scroll spot:", scrollSpot + " max scroll heigh ", scrollTotal);
 
     //Calulate percent of article scrolled, cap it to 100
     var percentage = (scrollSpot / scrollTotal) * 100
