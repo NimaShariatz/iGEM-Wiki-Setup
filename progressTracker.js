@@ -1,32 +1,59 @@
-var article = document.querySelector('article');
 
-function updateProgressBar() {
-    var scrollTotal = article.scrollHeight - window.innerHeight;
+function updateProgressTracker(section, link) {
+    //var scrollTotal = article.scrollHeight - window.innerHeight;
 
-    var scrollSpot = article.scrollTop;
+    //var scrollSpot = article.scrollTop;
     //console.log("Scroll spot:", scrollSpot + " max scroll heigh ", scrollTotal);
 
-    var element = document.getElementById("bandy");
-    var position = element.getBoundingClientRect();
+    
+    var position = section.getBoundingClientRect();
     //console.log("Top: " + position.top + "px" + " Bottom: " + position.bottom + "px");
 
-    var screen_location = (position.top - (window.innerHeight/2))
+    var screen_location = (position.top - (window.innerHeight/2) + 50)//did +50 because of margin-bottom = 50px
     
 
     if (screen_location < 0){
-        element.style.color="blue";
-    } else{
-        element.style.color="red";
+
+        link.style.scale = 1;
+        link.style.opacity = 1;
+    } else {
+        link.style.scale = 0.8;
+        link.style.opacity = 0.7;
+
     }
+
+
 
 
 
 
 }
 
+var article = document.querySelector('article');
+
+
+var sections = [document.getElementById("HeaderLink1"), document.getElementById("HeaderLink2"), document.getElementById("HeaderLink3"), 
+document.getElementById("HeaderLink4"), document.getElementById("HeaderLink5"), document.getElementById("HeaderLink6"), document.getElementById("HeaderLink7"), 
+document.getElementById("HeaderLink8"), document.getElementById("HeaderLink9"), document.getElementById("HeaderLink10")]
+
+
+var links = [document.getElementById("Link1"), document.getElementById("Link2"), document.getElementById("Link3"), 
+document.getElementById("Link4"), document.getElementById("Link5"), document.getElementById("Link6"), document.getElementById("Link7"), 
+document.getElementById("Link8"), document.getElementById("Link9"), document.getElementById("Link10")]
+
+article.addEventListener('scroll', event =>{
+    updateProgressTracker(sections[0], links[0]);
+    updateProgressTracker(sections[1], links[1]);
+    updateProgressTracker(sections[2], links[2]);
+    updateProgressTracker(sections[3], links[3]);
+    updateProgressTracker(sections[4], links[4]);
+    updateProgressTracker(sections[5], links[5]);
+    updateProgressTracker(sections[6], links[6]);
+    updateProgressTracker(sections[7], links[7]);
+    updateProgressTracker(sections[8], links[8]);
+    updateProgressTracker(sections[9], links[9]);
 
 
 
 
-
-article.addEventListener('scroll', updateProgressBar);
+});

@@ -35,6 +35,11 @@ ol {
     box-sizing: border-box;
   }
 
+p {
+  margin:0;
+  padding:0;
+
+}
 
   
 body {
@@ -47,6 +52,12 @@ body {
   background-color: #1c1c1c;
   color: #1c1c1c;
   font-size: 14px;
+}
+
+a{
+  text-decoration: none;/*set text decoration to 'none' so you dont have any underlines*/
+  color:#1c1c1c;/*font color*/
+  display:inline-block;
 }
 
 .mobile_menuLink{
@@ -141,6 +152,7 @@ aside {
     font-size: 15px;
   }
 
+
   #check + label {
         position: absolute;
         top: 0.2em;
@@ -160,6 +172,8 @@ aside {
     body{
       height: 100vh;
     }
+    
+
     #progress-bar{/*to make progress bar dissappear*/
       display: none;
     }
@@ -179,8 +193,8 @@ article {
 article .wrapper {
   margin: auto;
   padding: 2em;
-  max-width: 90%;
   display:flex;
+  padding-left:4em;
 
 
 }
@@ -484,13 +498,18 @@ article .wrapper {
 
 
 .progressTracker{
-  margin-top:68px;
-  width:180px;
+  margin-top:20px;
+  width:200px;
   padding-right:150px;
+  padding-left: 1em;
 
 }
 
 .progressTracker_Link{
   max-width:150px;
+  font-weight: bold;
+  scale:0.8;
+  opacity: 0.7;
+  transition: 320ms;
 
 }
