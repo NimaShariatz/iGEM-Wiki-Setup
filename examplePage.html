@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="examplePage.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="progressBar.js"></script>
@@ -29,9 +30,22 @@
   
   <aside> 
     
-    <nav style="overflow:scroll; scrollbar-width: none;">
-        
-        <ol style="margin-top:40px;">
+    <nav style="overflow:scroll; scrollbar-width: none; margin-left:35px; margin-top:20px;">
+
+        <div style="display:flex; flex-direction:row; width:100px;">
+            <div>
+                <a href="#">
+                    <img style="width:7vw; height:auto; float:left;" src="images/Logo Final.png">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <h1 style="padding-inline:20px;">&lt;Name&gt; </h1>
+                </a>
+            </div>
+        </div>
+
+        <ol style="margin-top:10px;">
           
             <li class="sub_menu"><a class="menu_item-purple mobile_menuLink" href="#0">Home</a></li>
             <li class="sub_menu"><a class="menu_item-cyan mobile_menuLink" href="#0">About</a></li>
@@ -59,7 +73,7 @@
             <li class="sub_menu"><a class="menu_item-red mobile_menuLink" href="#0">Contact</a></li>
         
         </ol>
-    
+
     </nav>
 
   </aside>
@@ -80,7 +94,19 @@
             <nav class="mega-menu">
                 <ul>
                     
-                    
+                    <div style="display:flex; flex-direction:row;">
+                        <div>
+                            <a href="#">
+                                <img style="width:30px; height:auto; margin-top:5px;" src="images/Logo Final.png">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <h3 style="margin:0; padding:0; margin-top:8px; margin-left:5px;">&lt;Name&gt; </h3>
+                            </a>
+                        </div>
+                    </div>
+
                     <li>
 
                         <a class="menu-title menu_item-purple" href="#">Home</a>
@@ -232,9 +258,99 @@
 
                     </li>
 
+                    <!--MENU 2-->
+
+
+                    <li>
+
+                        <a class="menu-title menu_item-red" href="loadingTestPage.html">AnotherLink</a>
+
+                    </li>
+
+                    
+
+                    <!--MENU 3-->
+                    <li class="has-submenu">
+
+                        <a class="menu-title menu_item-purple" href="#">Menu3</a>
+
+                        <div class="submenu-container">
+                            <div class="submenu">
+                                <h3>Some optional text here</h3>
+                                <div class="col-3">
+
+                                    <div class="submenu-column">
+                                        
+                                        <ul>
+
+                                            <li>
+                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                            </li>
+                                            <li>
+                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                            </li>
+                                            <li>
+                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-column">
+                                        
+                                        <ul>
+
+                                            <li>
+                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                            </li>
+                                            <li>
+                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                            </li>
+                                            <li>
+                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-column">
+                                        
+                                        <ul>
+
+                                            <li>
+                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                            </li>
+                                            <li>
+                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                            </li>
+                                            <li>
+                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <!--MENU 3-->
+
+
+
+                    <li>
+
+                        <a class="menu-title menu_item-green" href="loadingTestPage.html">AnotherLink</a>
+
+                    </li>
+
                 </ul>
 
-                <!--MENU 2-->
+                
+                
+                
 
 
             </nav>
@@ -248,7 +364,7 @@
 
         <div class="progressTracker">
             
-            <div style="display:flex; flex-direction:column; position:fixed;">
+            <div style="display:flex; flex-direction:column; position:fixed; margin-top:15px;">
                 <a id="Link1" href="#HeaderLink1" class="progressTracker_Link">Abstract</a>
                 <a style="margin-top:5px;" id="Link2" href="#HeaderLink2" class="progressTracker_Link">History of Agriculture</a>
                 <a style="margin-top:5px;" id="Link3" href="#HeaderLink3" class="progressTracker_Link">Significance of Agriculture in Alberta</a>
