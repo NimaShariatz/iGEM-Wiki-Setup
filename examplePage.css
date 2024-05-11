@@ -51,7 +51,7 @@ body {
   font-family: "Signika", "Lato", Arial, Helvetica, sans-serif;
   background-color: #1c1c1c;
   color: #1c1c1c;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 a{
@@ -192,7 +192,8 @@ article {
 }
 article .wrapper {
   margin: auto;
-  padding: 2em;
+  padding: 3em;
+  padding-right:9em; /*gives whitespace to the right*/
   display:flex;
   padding-left:4em;
 
@@ -518,7 +519,7 @@ article .wrapper {
   --scrollProgress: 0%;
   height: 3px;
   width: var(--scrollProgress);
-  background-color: #111111;
+  background: linear-gradient(0.25turn,#3b8e40, #fecc07);
   position: fixed;
   z-index: 100;
 }
@@ -529,7 +530,7 @@ article .wrapper {
 .progressTracker{
   margin-top:20px;
   width:200px;
-  padding-right:150px;
+  padding-right:16em;
   padding-left: 1em;
 
 }
@@ -542,3 +543,18 @@ article .wrapper {
   transition: 320ms;
 
 }
+
+
+
+
+
+
+
+#bottom_border{
+  border-style:solid;
+  border-width: 0 0 3px 0;
+  border-image: linear-gradient(to right,#3b8e40, #fecc07) 1;
+
+}
+
+
