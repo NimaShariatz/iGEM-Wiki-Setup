@@ -206,7 +206,7 @@ article .wrapper {
 
 
 /*The following are a series of hover effects for the menu. specifically the horizontal line on hover effect*/
-.menu_item-purple, .menu_item-cyan, .menu_item-yellow, .menu_item-blue, .menu_item-red    {
+.menu_item-purple, .menu_item-cyan, .menu_item-yellow, .menu_item-blue, .menu_item-red, .menu_item-green    {
   position: relative;
   text-decoration: none;
 }
@@ -300,21 +300,8 @@ article .wrapper {
   transition: .4s ease-in-out;
 }
 
-.menu_item-purple::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 3px;/*how thick the horizontal line effect is*/
-  border-radius: 2px;
-  background-color: #a300de;
-  bottom: -2px;/*verticle spacing of the horizontal line effect*/
-  left: 0;
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: .4s ease-in-out;
-}
 
-.menu_item-purple:hover::before, .menu_item-cyan:hover::before, .menu_item-yellow:hover::before, .menu_item-blue:hover::before, .menu_item-red:hover::before, .menu_item-green:hover::before, .menu_item-purple:hover::before {
+.menu_item-purple:hover::before, .menu_item-cyan:hover::before, .menu_item-yellow:hover::before, .menu_item-blue:hover::before, .menu_item-red:hover::before, .menu_item-green:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -417,12 +404,14 @@ article .wrapper {
 }
 
 
+
+
 .mega-menu-container .menu-title{
     padding: 10px 16px;
     font-weight: bold;
 }
 
-.mega-menu .menu-title{/*DELETE THIS AT THE END!!!!!!!!*/
+.mega-menu .menu-title{
     position: relative;
 }
 
@@ -545,16 +534,12 @@ article .wrapper {
 }
 
 
-
-
-
-
-
 #bottom_border{
   border-style:solid;
   border-width: 0 0 3px 0;
   border-image: linear-gradient(to right,#3b8e40, #fecc07) 1;
 
 }
+
 
 
