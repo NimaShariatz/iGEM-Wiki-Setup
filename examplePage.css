@@ -365,12 +365,12 @@ article .wrapper {
 
 .mega-menu-container a{
     display:inline-block;
-    transition: all 200ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 .mega-menu-container a:hover{ /*Hover effect for links in header. specifically the one where they grow*/
   text-shadow: 1px 1px 5px rgba(90, 96, 90, 0.4);
-  transform: scale(1.2);
+  transform: scale(1.05);
 
 }
 
