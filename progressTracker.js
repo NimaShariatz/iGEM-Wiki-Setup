@@ -1,5 +1,5 @@
 
-function updateProgressTracker(section, link) {
+function updateProgressTracker(section, link, bottom_borders) {
     //var scrollTotal = article.scrollHeight - window.innerHeight;
 
     //var scrollSpot = article.scrollTop;
@@ -16,9 +16,11 @@ function updateProgressTracker(section, link) {
 
         link.style.scale = 1;
         link.style.opacity = 1;
+        bottom_borders.style.borderImage = "linear-gradient(to right, #3b8e40, #fecc07) 1";
     } else {
         link.style.scale = 0.8;
         link.style.opacity = 0.7;
+        bottom_borders.style.borderImage = "linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 1";
 
     }
 
@@ -41,17 +43,23 @@ var links = [document.getElementById("Link1"), document.getElementById("Link2"),
 document.getElementById("Link4"), document.getElementById("Link5"), document.getElementById("Link6"), document.getElementById("Link7"), 
 document.getElementById("Link8"), document.getElementById("Link9"), document.getElementById("Link10")]
 
+var bottom_borders = [document.getElementById("bottom_border1"), document.getElementById("bottom_border2"), document.getElementById("bottom_border3"), 
+document.getElementById("bottom_border4"), document.getElementById("bottom_border5"), document.getElementById("bottom_border6"), document.getElementById("bottom_border7"), 
+document.getElementById("bottom_border8"), document.getElementById("bottom_border9"), document.getElementById("bottom_border10")]
+
+
+
 article.addEventListener('scroll', event =>{
-    updateProgressTracker(sections[0], links[0]);
-    updateProgressTracker(sections[1], links[1]);
-    updateProgressTracker(sections[2], links[2]);
-    updateProgressTracker(sections[3], links[3]);
-    updateProgressTracker(sections[4], links[4]);
-    updateProgressTracker(sections[5], links[5]);
-    updateProgressTracker(sections[6], links[6]);
-    updateProgressTracker(sections[7], links[7]);
-    updateProgressTracker(sections[8], links[8]);
-    updateProgressTracker(sections[9], links[9]);
+    updateProgressTracker(sections[0], links[0], bottom_borders[0]);
+    updateProgressTracker(sections[1], links[1], bottom_borders[1]);
+    updateProgressTracker(sections[2], links[2], bottom_borders[2]);
+    updateProgressTracker(sections[3], links[3], bottom_borders[3]);
+    updateProgressTracker(sections[4], links[4], bottom_borders[4]);
+    updateProgressTracker(sections[5], links[5], bottom_borders[5]);
+    updateProgressTracker(sections[6], links[6], bottom_borders[6]);
+    updateProgressTracker(sections[7], links[7], bottom_borders[7]);
+    updateProgressTracker(sections[8], links[8], bottom_borders[8]);
+    updateProgressTracker(sections[9], links[9], bottom_borders[9]);
 
 
 
