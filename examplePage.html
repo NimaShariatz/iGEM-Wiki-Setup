@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="examplePage.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="progressBar.js"></script>
     <script defer src="progressTracker.js"></script>
+    <script defer src="Accordion.js"></script>
 </head><!--see https://freefrontend.com/css-off-canvas-menus/ */-->
 
 
@@ -30,7 +31,7 @@
   
   <aside> 
     
-    <nav style="overflow:scroll; scrollbar-width: none; margin-left:35px; margin-top:20px;">
+    <nav style="overflow:scroll; scrollbar-width: none; margin-left:35px; margin-top:50px;">
 
         <div style="display:flex; flex-direction:row; width:100px; ">
             <div>
@@ -100,11 +101,13 @@
                                 <img style="width:30px; height:auto; margin-top:5px;" src="images/Logo Final.png">
                             </a>
                         </div>
+                        <!--
                         <div>
                             <a href="#">
                                 <h3 style="margin:0; padding:0; margin-top:8px; margin-left:5px;">&lt;Name&gt; </h3>
                             </a>
                         </div>
+                        -->
                     </div>
 
                     <li>
@@ -364,7 +367,7 @@
 
         <div class="progressTracker">
             
-            <div style="display:flex; flex-direction:column; position:fixed; margin-top:30px;">
+            <div style="display:flex; flex-direction:column; position:fixed; background-color:white; ">
                 <a id="Link1" href="#HeaderLink1" class="progressTracker_Link">Abstract</a>
                 <a style="margin-top:5px;" id="Link2" href="#HeaderLink2" class="progressTracker_Link">History of Agriculture</a>
                 <a style="margin-top:5px;" id="Link3" href="#HeaderLink3" class="progressTracker_Link">Significance of Agriculture in Alberta</a>
@@ -453,7 +456,7 @@
               Mahlein 2023).
             </p>
 
-            <img style="width:70vw; height:auto;" src="images/expertimental-overview-final2.png">
+            <img style="width:60vw; height:auto;" src="images/expertimental-overview-final2.png">
 
             <p id="HeaderLink5" style="margin-bottom:50px;"></p>
             <h1 id="bottom_border5">Local Scale / Global Scale</h1>
@@ -483,7 +486,7 @@
               antibodies.
             </p>
 
-            <img style="width:70vw; height:auto;" src="images/project-description-extra-image-tekengebied-1.svg">
+            <img style="width:60vw; height:auto;" src="images/project-description-extra-image-tekengebied-1.svg">
 
             <p>Nanobodies contain three complementary-determining regions (CDRs) which impart specificity in antigen
                 recognition and these loop domains can be modified to bind to a variety of antigens (Holliger and Hudson
@@ -570,9 +573,9 @@
             </p>
 
 
-            <p id="HeaderLink10" style="margin-bottom:50px;"></p>
+            <p id="HeaderLink10"></p>
             <h1 id="bottom_border10">Expanding to Other Infectious Microorganism and System Improvements</h1>
-            <p style="margin-bottom:300px;">The adaptable nature of our system lies in its rapid tunability. Due to the nature of our chimera
+            <p>The adaptable nature of our system lies in its rapid tunability. Due to the nature of our chimera
               construct, the placement of various restriction enzyme cut sites allow for easy modification and potential
               optimization. Regulatory sequences such as promoters, ribosome binding sites (RBS) and terminators can all
               be swapped out with relative ease. This can allow us to further hone and maximize efficiency of our
@@ -587,9 +590,35 @@
             </p>
 
 
+
+            <button class="accordion" style="margin-top: 100px;">References</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+              
+            
+
+
         </div>
 
     </div>
+
+    <div class = "bottom_Header"></div>
+
   </article>
 
 
