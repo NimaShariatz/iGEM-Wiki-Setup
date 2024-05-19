@@ -9,6 +9,8 @@
     <script defer src="Accordion.js"></script>
     <script defer src="darkmode.js"></script>
     <script defer src="buttonRipple.js"></script>
+    <script defer src="onHoverChangeText.js"></script>
+
 </head><!--see https://freefrontend.com/css-off-canvas-menus/ */-->
 
 
@@ -41,11 +43,13 @@
                     <img style="width:7vw; height:auto; float:left;" src="images/Logo Final.png">
                 </a>
             </div>
+        <!--
             <div>
                 <a href="#">
                     <h1 style="padding-inline:20px;">&lt;Name&gt; </h1>
                 </a>
             </div>
+        -->
         </div>
 
         <ol style="margin-top:10px;">
@@ -121,11 +125,11 @@
                     <!--MENU 1-->
                     <li class="has-submenu">
 
-                        <a class="menu-title menu_item-cyan" href="#">Menu1+</a>
+                        <a class="menu-title menu_item-cyan" href="#">Project+</a>
 
                         <div class="submenu-container">
                             <div class="submenu">
-                                <h3>Some optional text here</h3>
+                                <h3 id="TEXT-project_menu">A general overview of the project </h3>
                                 <div class="col-3">
 
                                     <div class="submenu-column">
@@ -133,13 +137,11 @@
                                         <ul>
 
                                             <li>
-                                                <a class="menu_item-cyan" href="#">Menu option</a>
+                                                <a id="P1" class="menu_item-cyan" href="#">Description</a>
                                             </li>
+
                                             <li>
-                                                <a class="menu_item-cyan" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-cyan" href="#">Menu option</a>
+                                                <a id="P2" class="menu_item-cyan" href="#">Engineering Success</a>
                                             </li>
 
                                         </ul>
@@ -149,33 +151,16 @@
                                         <ul>
 
                                             <li>
-                                                <a class="menu_item-cyan" href="#">Menu option</a>
+                                                <a id="P3" class="menu_item-cyan" href="#">Future Directions</a>
                                             </li>
+
                                             <li>
-                                                <a class="menu_item-cyan" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-cyan" href="#">Menu option</a>
+                                                <a id="P4" class="menu_item-cyan" href="#">Contribution</a>
                                             </li>
 
                                         </ul>
                                     </div>
-                                    <div class="submenu-column">
-                                    
-                                        <ul>
-
-                                            <li>
-                                                <a class="menu_item-cyan" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-cyan" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-cyan" href="#">Menu option</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
+  
 
                                 </div>
 
@@ -188,22 +173,17 @@
                     <!--MENU 1-->
                     
 
-                    <li>
-
-                        <a class="menu-title menu_item-yellow" href="loadingTestPage.html">AnotherLink</a>
-
-                    </li>
 
 
 
                     <!--MENU 2-->
                     <li class="has-submenu">
 
-                        <a class="menu-title menu_item-blue" href="#">Menu2</a>
+                        <a class="menu-title menu_item-blue" href="#">Wet Lab+</a>
 
                         <div class="submenu-container">
                             <div class="submenu">
-                                <h3>Some optional text here</h3>
+                                <h3 id="TEXT-wet_labmenu">Overview of the wet lab section</h3>
                                 <div class="col-3">
 
                                     <div class="submenu-column">
@@ -211,13 +191,11 @@
                                         <ul>
 
                                             <li>
-                                                <a class="menu_item-blue" href="#">Menu option</a>
+                                                <a id="WL1" class="menu_item-blue" href="#">Notebooks & Experiments</a>
                                             </li>
+
                                             <li>
-                                                <a class="menu_item-blue" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-blue" href="#">Menu option</a>
+                                                <a id="WL2" class="menu_item-blue" href="#">Results</a>
                                             </li>
 
                                         </ul>
@@ -227,29 +205,50 @@
                                         <ul>
 
                                             <li>
-                                                <a class="menu_item-blue" href="#">Menu option</a>
+                                                <a id="WL3" class="menu_item-blue" href="#">SOPs</a>
                                             </li>
+
                                             <li>
-                                                <a class="menu_item-blue" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-blue" href="#">Menu option</a>
+                                                <a id="WL4" class="menu_item-blue" href="#">Safety</a>
                                             </li>
 
                                         </ul>
                                     </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <!--MENU 2-->
+
+
+
+
+                    <!--MENU 2-->
+                    <li class="has-submenu">
+
+                        <a class="menu-title menu_item-red" href="#">Dry Lab+</a>
+
+                        <div class="submenu-container">
+                            <div class="submenu">
+                                <h3 id="TEXT-dry_lab_menu">Overview of the dry lab section</h3>
+                                <div class="col-3">
+
                                     <div class="submenu-column">
                                         
                                         <ul>
 
                                             <li>
-                                                <a class="menu_item-blue" href="#">Menu option</a>
+                                                <a id="DL1" class="menu_item-red" href="#">Modeling</a>
                                             </li>
+
                                             <li>
-                                                <a class="menu_item-blue" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-blue" href="#">Menu option</a>
+                                                <a id="DL2" class="menu_item-red" href="#">Parts</a>
                                             </li>
 
                                         </ul>
@@ -266,9 +265,11 @@
                     <!--MENU 2-->
 
 
+
+
                     <li>
 
-                        <a class="menu-title menu_item-red" href="loadingTestPage.html">AnotherLink</a>
+                        <a class="menu-title menu_item-yellow" href="loadingTestPage.html">Software Practices</a>
 
                     </li>
 
@@ -277,11 +278,11 @@
                     <!--MENU 3-->
                     <li class="has-submenu">
 
-                        <a class="menu-title menu_item-purple" href="#">Menu3</a>
+                        <a class="menu-title menu_item-purple" href="#">Human Practices+</a>
 
                         <div class="submenu-container">
                             <div class="submenu">
-                                <h3>Some optional text here</h3>
+                                <h3 id="TEXT-wet_human_practices_menu">Overview of the human practices</h3>
                                 <div class="col-3">
 
                                     <div class="submenu-column">
@@ -289,13 +290,11 @@
                                         <ul>
 
                                             <li>
-                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                                <a id="HP1" class="menu_item-purple" href="#">Overview</a>
                                             </li>
+
                                             <li>
-                                                <a class="menu_item-purple" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                                <a id="HP2" class="menu_item-purple" href="#">Education</a>
                                             </li>
 
                                         </ul>
@@ -305,13 +304,11 @@
                                         <ul>
 
                                             <li>
-                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                                <a id="HP3" class="menu_item-purple" href="#">Science Communication</a>
                                             </li>
+
                                             <li>
-                                                <a class="menu_item-purple" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                                <a id="HP4" class="menu_item-purple" href="#">Integrated Human Practices</a>
                                             </li>
 
                                         </ul>
@@ -321,13 +318,7 @@
                                         <ul>
 
                                             <li>
-                                                <a class="menu_item-purple" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-purple" href="#">Menu option</a>
-                                            </li>
-                                            <li>
-                                                <a class="menu_item-purple" href="#">Menu option</a>
+                                                <a id="HP5" class="menu_item-purple" href="#">Policy Review</a>
                                             </li>
 
                                         </ul>
@@ -345,11 +336,40 @@
 
 
 
-                    <li>
+                    <!--MENU 3-->
+                    <li class="has-submenu">
 
-                        <a class="menu-title menu_item-green" href="loadingTestPage.html">AnotherLink</a>
+                        <a class="menu-title menu_item-green" href="#">Team+</a>
+
+                        <div class="submenu-container">
+                            <div class="submenu">
+                                <h3 id="TEXT-Team_menu">Overview of the team</h3>
+                                <div class="col-3">
+
+                                    <div class="submenu-column">
+                                        
+                                        <ul>
+
+                                            <li>
+                                                <a id="T1" class="menu_item-green" href="#">Members</a>
+                                            </li>
+
+                                            <li>
+                                                <a id="T2" class="menu_item-green" href="#">Attributions</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
 
                     </li>
+
+                    <!--MENU 3-->
 
                     <button id="toggle-mode">Mode</button>
 

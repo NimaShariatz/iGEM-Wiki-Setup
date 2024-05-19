@@ -4,9 +4,11 @@
 
 
 
+
 :root{
   --primary-colour: #FFFFFF;
   --text-colour: #1c1c1c;
+
 }
 .dark-theme{
   --primary-colour: #d10000;
@@ -442,9 +444,9 @@ article .wrapper {
     opacity:0;
     position:absolute;
     pointer-events: none;/*prevents us on clicking the submenus outside of the hover effect*/
-    top:35px;/*distance between popup and header*/
-    min-width: 460px;/*size of our dropdown*/
-    min-height: 235px;/*size of our dropdown*/
+    top:48px;/*distance between popup and header*/
+    width: 460px;/*size of our dropdown*/
+    min-height: 180px;/*size of our dropdown*/
     margin-left:-200px;/*what i used to try and center the dropdown div on hover. ok for now.*/
     transform:translateY(10px);/*animation of hover menu*/
     transition: all 200ms ease-in;/*animation of hover menu*/
@@ -461,7 +463,7 @@ article .wrapper {
 
 .submenu .col-3 {
     display:flex;
-    gap:32px;
+    gap:45px;
     border-top: 1px solid rgba(2,48,71,0.2);
 
 }
@@ -500,7 +502,17 @@ article .wrapper {
 
 
 
+
 /*THE FOLLOWING ABOVE IS EXCLUSIVELY FOR THE TRADITIONAL HEADER STYLE MENU*/
+
+
+
+
+
+
+
+
+
 
 /*preloader*/
 #preloader{
