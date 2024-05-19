@@ -11,12 +11,16 @@ var changed_text = ["Abstract, History of Agriculture, Significance of Agricultu
 
 function mouseOver(header_menu, changed_text) {
 
+    header_menu.style.transition = "all 1s";
     header_menu.innerHTML = changed_text;
+    header_menu.style.opacity = "1";
+
   }
   
   function mouseOut(header_menu, original_text) {
-  
+      header_menu.style.transition = "all 1s";
       header_menu.innerHTML = original_text;
+      header_menu.style.opacity = "0.6";
   
   }
   

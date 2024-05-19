@@ -83,6 +83,11 @@ svg{
     color:#1c1c1c;
 }
 
+h3 {
+  font-size: 12px;
+}
+
+
 
 /*The following is for the menu and 'X' icon*/
 #check {
@@ -213,7 +218,9 @@ article .wrapper {
 
 }
 
-
+.sub_menu h3{
+  margin: 10px 0;
+}
 
 
 
@@ -446,7 +453,7 @@ article .wrapper {
     pointer-events: none;/*prevents us on clicking the submenus outside of the hover effect*/
     top:48px;/*distance between popup and header*/
     width: 460px;/*size of our dropdown*/
-    min-height: 180px;/*size of our dropdown*/
+    height: 180px;/*size of our dropdown*/
     margin-left:-200px;/*what i used to try and center the dropdown div on hover. ok for now.*/
     transform:translateY(10px);/*animation of hover menu*/
     transition: all 200ms ease-in;/*animation of hover menu*/
@@ -483,6 +490,9 @@ article .wrapper {
 
 }
 
+.TEXT-project_menu{
+  transition: 10s linear;
+}
 
 .submenu .col-3 ul li{
     padding:0;
@@ -490,14 +500,6 @@ article .wrapper {
     margin: 12px 0;/*margin for points in dropdown menu*/
     position:relative;
 }
-
-
-
-.sub_menu h3{
-    margin: 10px 0;
-}
-
-
 
 
 
