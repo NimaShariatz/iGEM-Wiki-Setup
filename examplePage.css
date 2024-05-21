@@ -9,7 +9,7 @@
   --text-colour: #1c1c1c;
 }
 .dark-theme{
-  --primary-colour: #d10000;
+  --primary-colour: #182c25;
   --text-colour: #FFFFFF;
 }
 
@@ -530,7 +530,7 @@ article .wrapper {
   width:200px;
   padding-right:16em;
   padding-left: 1em;
-
+  background-color: var(--primary-colour);
 }
 
 .progressTracker_Link{
@@ -539,7 +539,7 @@ article .wrapper {
   scale:0.8;
   opacity: 0.7;
   transition: 320ms;
-
+  background-color: var(--primary-colour);
 }
 
 
@@ -800,3 +800,6 @@ article .wrapper {
   margin: 6px;
 }
 
+.no-transition {
+  transition: none !important;
+}
