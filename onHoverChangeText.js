@@ -3,8 +3,8 @@
 var header_menu = [document.getElementById("TEXT-project_menu"), document.getElementById("TEXT-wet_labmenu"), 
 document.getElementById("TEXT-dry_lab_menu"), document.getElementById("TEXT-wet_human_practices_menu"), document.getElementById("TEXT-Team_menu")];
 
-var original_text = ["A general overview of the project" , "Overview of the wet lab section", "Overview of the dry lab section",
-"Overview of the human practices", "Overview of the team"];
+var original_text = ["<br/>" , "<br/>", "<br/>",
+"<br/>", "<br/>"];
 
 var changed_text = ["Abstract, History of Agriculture, Significance of Agriculture in..."];
 
