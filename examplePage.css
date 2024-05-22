@@ -8,11 +8,17 @@
 :root{
   --primary-colour: #FFFFFF;
   --text-colour: #1c1c1c;
+  --accordion-colour: rgb(236, 236, 236);
+  --gradient-start: #3b8e40;
+  --gradient-end: #fecc07;
 
 }
 .dark-theme{
-  --primary-colour: #182c25;
+  --primary-colour: #264439;
   --text-colour: #FFFFFF;
+  --accordion-colour: #455b55;
+  --gradient-start: #455249;
+  --gradient-end: #a8a8a8;
 }
 
 
@@ -58,14 +64,14 @@ body {
   display: flex;
   line-height: 1.5;
   font-family: "Signika", "Lato", Arial, Helvetica, sans-serif;
-  background-color: #1c1c1c;
+  background-color: var(--text-colour);
   color: var(--text-colour);
   font-size: 12px;
 }
 
 a{
   text-decoration: none;/*set text decoration to 'none' so you dont have any underlines*/
-  color:#1c1c1c;/*font color*/
+  color: var(--text-colour);/*font color*/
   display:inline-block;
 }
 
@@ -75,12 +81,12 @@ a{
 
 .mobile_menuLink{
   text-decoration: none;/*set text decoration to 'none' so you dont have any underlines*/
-  color:#1c1c1c;/*font color*/
+  color: var(--text-colour);/*font color*/
   font-weight: bold;
 }
 
 svg{
-    color:#1c1c1c;
+    color:var(--text-colour);
 }
 
 h3 {
@@ -369,7 +375,7 @@ article .wrapper {
 /*THE FOLLOWING BELOW IS EXCLUSIVELY FOR THE TRADITIONAL HEADER STYLE MENU*/
 
 .mega-menu-container{
-    color:#1c1c1c;/*font color*/
+    color: var(--text-colour);/*font color*/
 }
 
 
@@ -408,7 +414,7 @@ article .wrapper {
     z-index: 10;
 
     box-shadow: 0 4px 30px -7px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: var(--primary-colour);
 
 
     border-color:rgba(0, 0, 0, 0.2);/*border color of traditional header*/
@@ -477,7 +483,7 @@ article .wrapper {
 
 
 .submenu {
-    background-color: white;
+    background-color: var(--primary-colour);
     padding:16px 24px;
     margin-top:10px;
     left:0;
@@ -531,7 +537,7 @@ article .wrapper {
   --scrollProgress: 0%;
   height: 3px;
   width: var(--scrollProgress);
-  background: linear-gradient(0.25turn,#3b8e40, #fecc07);
+  background: linear-gradient(0.25turn, var(--gradient-start), var(--gradient-end));
   position: fixed;
   z-index: 100;
 }
@@ -561,7 +567,7 @@ article .wrapper {
 , #bottom_border8, #bottom_border9, #bottom_border10 {
   border-style:solid;
   border-width: 0 0 3px 0;
-  border-image: linear-gradient(to right,#3b8e40, #fecc07) 1;
+  border-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end)) 1;
   transition: all 1s ease-in-out;
 
 
@@ -619,7 +625,7 @@ article .wrapper {
 /*the stuff below is related to the Accordion dropdown. see https://www.w3schools.com/howto/howto_js_accordion.asp on how its done */
 .accordion {
   background-color: #ccc;
-  color: --text-colour;
+  color: #1c1c1c;
   cursor: pointer;
   padding: 10px;
   width: 30%;
@@ -648,7 +654,7 @@ article .wrapper {
 
 .accordion:after {
   content: '\002B';
-  color: --text-colour;
+  color: var(--text-colour);
   font-weight: bold;
   margin-left: 5px;
   animation: ripple 0.5s linear;
@@ -660,7 +666,7 @@ article .wrapper {
 
 .accordion-span{
   position: absolute;
-  background: #ffffff;
+  background: var(--primary-colour);
   transform: translate(-50%, -50%);
   pointer-events: none;
   border-radius: 50%;
@@ -670,7 +676,7 @@ article .wrapper {
 
 .panel {
   padding: 0 18px;
-  background-color: rgb(236, 236, 236);
+  background-color: var(--accordion-colour);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -706,7 +712,7 @@ article .wrapper {
 .bottom_Header{
   width:100%;
   height:15vh;
-  background:linear-gradient(to right,#3b8e40, #fecc07);
+  background:linear-gradient(to right, var(--gradient-start), var(--gradient-end));
   border-color:rgba(0, 0, 0, 0.2);/*border color of traditional header*/
   border-style: solid;
   border-width: 2px 0 0 0;/*only have a bottom border color*/
@@ -817,3 +823,10 @@ article .wrapper {
 .no-transition {
   transition: none !important;
 }
+
+#toggle-mode{
+  cursor: pointer;
+  padding: 5px;
+}
+
+/*filter: invert(29%) sepia(84%) saturate(7284%) hue-rotate(356deg) brightness(102%) contrast(107%);*/
