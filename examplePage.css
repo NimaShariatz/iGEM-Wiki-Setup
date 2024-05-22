@@ -827,6 +827,9 @@ article .wrapper {
 #toggle-mode{
   cursor: pointer;
   padding: 5px;
+  transition: .2s ease-in-out;
 }
 
-/*filter: invert(29%) sepia(84%) saturate(7284%) hue-rotate(356deg) brightness(102%) contrast(107%);*/
+#toggle-mode:hover{
+  transform: scale(1.15);
+}
