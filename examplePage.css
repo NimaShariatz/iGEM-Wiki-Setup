@@ -11,6 +11,7 @@
   --accordion-colour: rgb(236, 236, 236);
   --gradient-start: #3b8e40;
   --gradient-end: #fecc07;
+  --accordion-hover-colour: #fecc07;
 
 }
 .dark-theme{
@@ -19,6 +20,7 @@
   --accordion-colour: #455b55;
   --gradient-start: #455249;
   --gradient-end: #a8a8a8;
+  --accordion-hover-colour: #fecc07;
 }
 
 
@@ -644,7 +646,7 @@ article .wrapper {
 }
 
 .active, .accordion:hover {
-  background-color: #fecc07;
+  background-color: var(--accordion-hover-colour);
   border: solid;
   border-width: 0 0 2px 0;
   border-color:#626262;
