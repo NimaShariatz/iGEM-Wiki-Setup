@@ -6,13 +6,14 @@
 
 
 :root{
-  --primary-colour: #FFFFFF;
+  --primary-colour: #F4F5FA;
   --text-colour: #1c1c1c;
   --accordion-colour: rgb(236, 236, 236);
   --gradient-start: #3b8e40;
   --gradient-end: #fecc07;
   --accordion-hover-colour: #fecc07;
   --submenu-border: rgba(2,48,71,0.2);
+  color:wh
 
 }
 .dark-theme{
@@ -95,7 +96,7 @@ svg{
 }
 
 h3 {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 
@@ -335,6 +336,7 @@ article .wrapper {
 .menu_item-purple:hover::before, .menu_item-cyan:hover::before, .menu_item-yellow:hover::before, .menu_item-blue:hover::before, .menu_item-red:hover::before, .menu_item-green:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+  z-index: -1;
 }
 
 
@@ -391,6 +393,7 @@ article .wrapper {
 
 .mega-menu-container a{
     display:inline-block;
+    font-weight:bold;
     transition: all 150ms ease-in-out;
 }
 
@@ -418,7 +421,7 @@ article .wrapper {
     max-width:100%;
     z-index: 10;
 
-    box-shadow: 0 4px 30px -7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px -7px rgba(0, 0, 0, 0.2);
     background-color: var(--primary-colour);
 
 
@@ -442,7 +445,7 @@ article .wrapper {
 
 
 .mega-menu-container .menu-title{
-    padding: 10px 16px;
+    padding: 10px 5px;
     font-weight: bold;
 }
 
@@ -462,9 +465,9 @@ article .wrapper {
     opacity:0;
     position:absolute;
     pointer-events: none;/*prevents us on clicking the submenus outside of the hover effect*/
-    top:48px;/*distance between popup and header*/
+    top:33px;/*distance between popup and header*/
     width: 460px;/*size of our dropdown*/
-    height: 180px;/*size of our dropdown*/
+    height: 170px;/*size of our dropdown*/
     margin-left:-200px;/*what i used to try and center the dropdown div on hover. ok for now.*/
     transform:translateY(10px);/*animation of hover menu*/
     transition: all 200ms ease-in;/*animation of hover menu*/
@@ -492,11 +495,17 @@ article .wrapper {
     padding:16px 24px;
     margin-top:10px;
     left:0;
-    box-shadow: 0 4px 50px -7px rgba(0, 0, 0, 0.3);
+    box-shadow:
+    0.7px 2.3px 18.1px -30px rgba(0, 0, 0, 0.88),
+    2px 6.7px 26.2px -30px rgba(0, 0, 0, 0.633),
+    4.1px 13.5px 32.5px -30px rgba(0, 0, 0, 0.525),
+    7.2px 23.8px 39.3px -30px rgba(0, 0, 0, 0.44),
+    11.8px 39.1px 49.6px -30px rgba(0, 0, 0, 0.355),
+    19px 63px 78px -30px rgba(0, 0, 0, 0.247);
     border-color:rgba(0, 0, 0, 0.2);
     border-style: solid;
     border-width:1px;
-    border-radius: 3px;
+    border-radius: 5px;
 
 
 }
@@ -564,7 +573,7 @@ article .wrapper {
   scale:0.8;
   opacity: 0.7;
   transition: 320ms;
-  background-color: var(--primary-colour);
+  background-color: transparent;
 }
 
 

@@ -3,10 +3,10 @@
 var header_menu = [document.getElementById("TEXT-project_menu"), document.getElementById("TEXT-wet_labmenu"), 
 document.getElementById("TEXT-dry_lab_menu"), document.getElementById("TEXT-wet_human_practices_menu"), document.getElementById("TEXT-Team_menu")];
 
-var original_text = ["<br/>" , "<br/>", "<br/>",
-"<br/>", "<br/>"];
+var original_text = ["<br/><br/>" , "<br/><br/>", "<br/><br/>",
+"<br/><br/>", "<br/><br/>"];
 
-var changed_text = ["Abstract, History of Agriculture, Significance of Agriculture in..."];
+var changed_text = ["A general outline of the project with emphasis on agriculture, crop infections, nanobodies and the relevancy of our research to this topic"];
 
 
 function mouseOver(header_menu, changed_text) {
