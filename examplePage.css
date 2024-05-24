@@ -756,13 +756,10 @@ article .wrapper {
   align-items: center;
 }
 
-.bottom_Header:hover .logos-slide{
-  animation-play-state: paused;
-}
 
 .logos-slide {
   display: inline-block;
-  animation: 27s carousel infinite linear;
+  animation: 80s carousel infinite linear;
   padding: 20px 0;
 }
 
