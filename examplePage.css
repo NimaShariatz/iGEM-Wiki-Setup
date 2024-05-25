@@ -20,7 +20,6 @@
   --cyan: #2ae0c8;
   --orange: #ea9203;
   --blue: #1e8bc3;
-  --light-red: #e26a6a;
   --red: #ce0026;
   --pink: #ff00aa;
 
@@ -249,7 +248,7 @@ article .wrapper {
 
 
 /*The following are a series of hover effects for the menu. specifically the horizontal line on hover effect*/
-.menu_item-purple, .menu_item-cyan, .menu_item-orange, .menu_item-blue, .menu_item-red, .menu_item-light-red, .menu_item-pink{
+.menu_item-purple, .menu_item-cyan, .menu_item-orange, .menu_item-blue, .menu_item-red, .menu_item-pink{
   position: relative;
   text-decoration: none;
 }
@@ -329,19 +328,6 @@ article .wrapper {
 }
 
 
-.menu_item-light-red::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 3px;/*how thick the horizontal line effect is*/
-  border-radius: 2px;
-  background-color: var(--light-red);
-  bottom: 0px;/*verticle spacing of the horizontal line effect*/
-  left: 0;
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: .4s ease-in-out;
-}
 
 .menu_item-pink::before {
   content: '';
@@ -359,7 +345,7 @@ article .wrapper {
 
 
 .menu_item-purple:hover::before, .menu_item-cyan:hover::before, .menu_item-orange:hover::before, .menu_item-blue:hover::before,
- .menu_item-red:hover::before, .menu_item-light-red:hover::before, .menu_item-pink:hover::before  {
+ .menu_item-red:hover::before, .menu_item-pink:hover::before  {
   transform-origin: left;
   transform: scaleX(1);
   z-index: 20;
@@ -688,23 +674,6 @@ article .wrapper {
   background-color: rgba(234, 146, 3, 0.1);
   box-shadow: 0 -5px 10px 2px rgba(234, 146, 3, 0.1);
 }
-
-.paragraph_link_light-red{
-  border-style:solid;
-  border-color:rgba(226, 106, 106, 0.5);
-  border-width: 0px 0px 2px 0px;
-  transition: all 300ms ease-in-out;
-}
-
-
-.paragraph_link_light-red:hover{
-  border-color:var(--light-red);
-  background-color: rgba(226, 106, 106, 0.1);
-  box-shadow: 0 -5px 10px 2px rgba(226, 106, 106, 0.1);
-  
-}
-
-
 
 
 .paragraph_link_pink{
