@@ -26,7 +26,6 @@ toggle.onclick = function() {
             element.classList.remove('no-transition');
         });
     }, 1);
-
     if (document.body.classList.contains("dark-theme")) {
         toggle.src = "images/sun.svg"; 
         toggle.style.filter = "invert(100%)";

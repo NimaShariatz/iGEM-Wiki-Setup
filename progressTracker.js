@@ -16,7 +16,7 @@ function updateProgressTracker(section, link, bottom_borders) {
 
         link.style.scale = 1;
         link.style.opacity = 1;
-        bottom_borders.style.borderImage = "linear-gradient(to right, #3b8e40, #fecc07) 1";
+        bottom_borders.style.borderImage = "linear-gradient(to right, #e3b707, #e3b707) 1";
     } else {
         link.style.scale = 0.8;
         link.style.opacity = 0.7;
@@ -26,13 +26,9 @@ function updateProgressTracker(section, link, bottom_borders) {
 
 
 
-
-
-
 }
 
 var article = document.querySelector('article');
-
 
 var sections = [document.getElementById("HeaderLink1"), document.getElementById("HeaderLink2"), document.getElementById("HeaderLink3"), 
 document.getElementById("HeaderLink4"), document.getElementById("HeaderLink5"), document.getElementById("HeaderLink6"), document.getElementById("HeaderLink7"), 
