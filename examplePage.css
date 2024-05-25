@@ -480,7 +480,7 @@ article .wrapper {
     top:33px;/*distance between popup and header*/
     width: 420px;/*size of our dropdown*/
     height: 170px;/*size of our dropdown*/
-    margin-left:-200px;/*what i used to try and center the dropdown div on hover. ok for now.*/
+    margin-left:-180px;/*what i used to try and center the dropdown div on hover. ok for now.*/
     transform:translateY(10px);/*animation of hover menu*/
     transition: all 200ms ease-in;/*animation of hover menu*/
     /*background-color:red;*/
