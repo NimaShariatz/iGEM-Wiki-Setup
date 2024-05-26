@@ -11,6 +11,10 @@
     <script defer src="darkmode.js"></script>
     <script defer src="buttonRipple.js"></script>
     <script defer src="onHoverChangeText.js"></script>
+    <script defer src="imageEffect.js"></script>
+    <script defer src="preloader.js"></script>
+
+
 
 </head><!--see https://freefrontend.com/css-off-canvas-menus/ */-->
 
@@ -421,9 +425,9 @@
 
         <div class="progressTracker_column">
             
-            <div class="progressTracker_div" style="display:flex; flex-direction:column; position:fixed; padding-top:5px; margin-top:5px;">
+            <div class="progressTracker_div" style="display:flex; flex-direction:column; position:fixed; padding-top:5px; margin-top:5px; ">
 
-                <h2 style="border-color:var(--submenu-border); border-width: 0 0 2px 0; border-style:solid;"> <img width="13px" height="13px" src="images/yarnBasket.png"> Content</h2>
+                <h2 style="border-color:var(--gradient-end); border-width: 0 0 2px 0; border-style:solid;"> <img width="13px" height="13px" src="images/yarnBasket.png"> Content</h2>
 
                 <a style="margin-top:5px;" id="Link1" href="#HeaderLink1" class="progressTracker_Link"><img width="13px" height="13px" src="images/yarn.png"> Abstract</a>
                 <a style="margin-top:5px;" id="Link2" href="#HeaderLink2" class="progressTracker_Link"><img width="13px" height="13px" src="images/yarn.png"> History of Agriculture</a>
@@ -512,7 +516,10 @@
               Mahlein 2023).
             </p>
 
-            <img style="width:60vw; height:auto;" src="images/expertimental-overview-final2.png">
+            <figure>
+                <img id="imgPara1" class="Images-paragraph_setup" style="width:60vw;" src="images/expertimental-overview-final2.png">
+                <figcaption id="figCap1" class="Images-figCap" style="width:60vw;"><strong>Fig 1. |</strong> image text here</figcaption>
+            </figure>
 
             <p id="HeaderLink5" style="margin-bottom:50px;"></p>
             <h1 id="bottom_border5">Local Scale / Global Scale</h1>
@@ -542,7 +549,11 @@
               antibodies.
             </p>
 
-            <img style="width:60vw; height:auto;" src="images/project-description-extra-image-tekengebied-1.svg">
+            
+            <figure>
+                <img id="imgPara2" class="Images-paragraph_setup" style="width:60vw;" src="images/project-description-extra-image-tekengebied-1.svg">
+                <figcaption id="figCap2" class="Images-figCap" style="width:60vw;"><strong>Fig 1. |</strong> image text here</figcaption>
+            </figure>
 
             <p>Nanobodies contain three complementary-determining regions (CDRs) which impart specificity in antigen
                 recognition and these loop domains can be modified to bind to a variety of antigens (Holliger and Hudson
@@ -757,29 +768,6 @@
     </div>
 
   </article>
-
-
-
-
-  
-  <!-- preloader script -->
-  <script>
-    var loader = document.getElementById("preloader");
-
-    //Actual code:
-    // window.addEventListener("load", function(){
-    //     loader.style.display = "none";
-    // })
-
-    //NOTE: THe timeout is just to simulate how a loading page might work
-    window.addEventListener("load", function(){
-        setTimeout(function() {
-            loader.style.display = "none";
-        }, 50);
-    });
-  </script>
-
-
 
 
 

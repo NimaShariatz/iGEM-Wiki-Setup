@@ -14,6 +14,7 @@
   --accordion-hover-colour: #e3b707;
   --submenu-border: rgba(2,48,71,0.2);
   --menu-colour: var(--primary-colour);
+  --progressTracker-colour:rgba(187, 188, 173, 0.2);
 
   
   --purple: #9e19d3;
@@ -34,6 +35,7 @@
   --accordion-hover-colour: #e3b707;
   --submenu-border: rgba(0, 0, 0, 0.2);
   --menu-colour: #213930;
+  --progressTracker-colour: var(--menu-colour);
 }
 
 
@@ -560,9 +562,10 @@ article .wrapper {
 
 .progressTracker_div{
   padding-inline: 1em;
-  background-color: var(--menu-colour);
+  background-color: var(--progressTracker-colour);
   padding-bottom: 1em;
   border-radius: 5px;
+  
 }
 
 .progressTracker_Link{
@@ -872,6 +875,20 @@ article .wrapper {
 
 #toggle-mode:hover{
   transform: scale(1.1);
+}
+
+
+
+.Images-paragraph_setup{
+  height:auto; 
+  border-style:dashed; 
+  border-width: 0px 0 2px 0; 
+  border-color:var(--progressTracker-colour);
+  transition: 0.7s ease-in-out;
+}
+
+.Images-figCap{
+  transition: 0.7s ease-in-out;
 }
 
 

@@ -1,6 +1,6 @@
 //const buttons = document.querySelectorAll('a.ripple-button');
 const buttons = document.querySelectorAll('.accordion');
-console.log(buttons.length);
+//console.log(buttons.length);
 buttons.forEach(btn => {
     btn.addEventListener('click', function(onClickData) {
         //find click position inside of button

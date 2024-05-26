@@ -5,22 +5,24 @@ function updateProgressTracker(section, link, bottom_borders) {
     //var scrollSpot = article.scrollTop;
     //console.log("Scroll spot:", scrollSpot + " max scroll heigh ", scrollTotal);
 
-    
-    var position = section.getBoundingClientRect();
-    //console.log("Top: " + position.top + "px" + " Bottom: " + position.bottom + "px");
+    if(section!=null){
+        var position = section.getBoundingClientRect();
+        //console.log("Top: " + position.top + "px" + " Bottom: " + position.bottom + "px");
 
-    var screen_location = (position.top - (window.innerHeight/2) - 100);
-    
+        var screen_location = (position.top - (window.innerHeight/2) - 85);
+        
 
-    if (screen_location < 0){
+        if (screen_location < 0){
 
-        link.style.scale = 1;
-        link.style.opacity = 1;
-        bottom_borders.style.borderImage = "linear-gradient(to right, #e3b707, #e3b707) 1";
-    } else {
-        link.style.scale = 0.8;
-        link.style.opacity = 0.7;
-        bottom_borders.style.borderImage = "linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 1";
+            link.style.scale = 1;
+            link.style.opacity = 1;
+            bottom_borders.style.borderImage = "linear-gradient(to right, #e3b707, #e3b707) 1";
+        } else {
+            link.style.scale = 0.8;
+            link.style.opacity = 0.7;
+            bottom_borders.style.borderImage = "linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 1";
+
+        }
 
     }
 
