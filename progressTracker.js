@@ -9,7 +9,7 @@ function updateProgressTracker(section, link, bottom_borders) {
     var position = section.getBoundingClientRect();
     //console.log("Top: " + position.top + "px" + " Bottom: " + position.bottom + "px");
 
-    var screen_location = (position.top - (window.innerHeight/2) + 50)//did +50 because of margin-bottom = 50px
+    var screen_location = (position.top - (window.innerHeight/2) - 100);
     
 
     if (screen_location < 0){
