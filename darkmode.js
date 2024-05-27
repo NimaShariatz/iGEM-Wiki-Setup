@@ -1,3 +1,5 @@
+"use strict";
+
 // var toggle = document.getElementById("toggle-mode")
 
 // toggle.onclick = function(){

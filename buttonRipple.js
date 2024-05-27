@@ -1,3 +1,5 @@
+"use strict";
+
 //const buttons = document.querySelectorAll('a.ripple-button');
 const buttons = document.querySelectorAll('.accordion');
 //console.log(buttons.length);

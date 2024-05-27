@@ -464,9 +464,9 @@ article .wrapper {
     position:absolute;
     pointer-events: none;/*prevents us on clicking the submenus outside of the hover effect*/
     top:33px;/*distance between popup and header*/
-    width: 420px;/*size of our dropdown*/
+    width: 400px;/*size of our dropdown*/
     height: 170px;/*size of our dropdown*/
-    margin-left:-180px;/*what i used to try and center the dropdown div on hover. ok for now.*/
+    margin-left:-160px;/*what i used to try and center the dropdown div on hover. ok for now.*/
     transform:translateY(10px);/*animation of hover menu*/
     transition: all 200ms ease-in;/*animation of hover menu*/
     /*background-color:red;*/
@@ -482,7 +482,7 @@ article .wrapper {
 
 .submenu .col-3 {
     display:flex;
-    gap:50px;
+    gap:40px;
     border-top: 1px solid var(--submenu-border);
 
 }
@@ -671,6 +671,15 @@ article .wrapper {
   background-color: rgba(255, 72, 194, 0.1);
   box-shadow: 0 -5px 10px 2px rgba(255, 0, 170, 0.1);
 }
+
+
+.active-link{/*so whatever page you are in, it will do this to the link corrosponding to it!!!!!!*/
+
+  color: var(--accordion-hover-colour)
+}
+
+
+
 /*the stuff above is related to on hover link effect in paragraphs*/
 
 
@@ -743,29 +752,7 @@ article .wrapper {
 }
 /*the stuff below is related to the Accordion dropdown*/
 
-/* .ripple-button{
-  border-radius: 40px;
-  background: linear-gradient(90deg, #275d38, #398f3f);
-  padding: 12px 36px;
-  color:#ffffff;
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-}
 
-
-.button-ripple-span{
-  position: absolute;
-  background: #ffffff;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  border-radius: 50%;
-  overflow: hidden;
-  animation: ripple 0.5s linear infinite;
-} */
 
 .bottom_Header{
   width:100%;

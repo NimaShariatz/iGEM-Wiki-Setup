@@ -1,3 +1,5 @@
+"use strict";
+
 var loader = document.getElementById("preloader");
 
 //Actual code:

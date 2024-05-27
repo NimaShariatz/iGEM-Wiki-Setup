@@ -1,3 +1,5 @@
+"use strict";
+
 var article = document.querySelector('article');
 
 function updateProgressBar() {

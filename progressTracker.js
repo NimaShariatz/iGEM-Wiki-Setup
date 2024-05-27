@@ -1,3 +1,4 @@
+"use strict";
 
 function updateProgressTracker(section, link, bottom_borders) {
     //var scrollTotal = article.scrollHeight - window.innerHeight;

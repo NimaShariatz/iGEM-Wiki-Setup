@@ -1,3 +1,4 @@
+"use strict";
 
 
 var header_menu = [document.getElementById("TEXT-project_menu"), document.getElementById("TEXT-wet_labmenu"), 
