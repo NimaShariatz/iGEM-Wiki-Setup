@@ -6,7 +6,7 @@
 
 
 :root{
-  --primary-colour: #F4F5FA;
+  --primary-colour: #fcf6f0;
   --text-colour: #1c1c1c;
   --accordion-colour: rgb(236, 236, 236);
   --gradient-start: #3b8e40;
@@ -904,7 +904,7 @@ article .wrapper {
 }
 
 .footer-info img{
-  height: 100%;
+  height: 70%;
   width: auto;
 }
 
