@@ -906,10 +906,18 @@ article .wrapper {
   display: flex;
   align-items: center; 
   justify-content: center;
+  transition: .4s ease-in-out;
+}
+.social-logos a:hover{
+  transform: scale(1.05);
 }
 .social-logos img{
   height: 3vh;
   margin: 1vh;
+}
+
+.social-logos a:hover img {
+  transform: scale(1.1);
 }
 
 
