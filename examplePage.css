@@ -770,6 +770,7 @@ article .wrapper {
   align-items: center;
   overflow: hidden;
   z-index: 1;
+  min-height: 70px;
 }
 
 
@@ -805,6 +806,7 @@ article .wrapper {
   height: 6vh;
   margin-right: 35px;
   transition: all 300ms linear;
+  min-height: 30px;
 }
 
 .logos-slide img:hover{
@@ -913,7 +915,8 @@ article .wrapper {
 }
 .social-logos img{
   height: 3vh;
-  margin: 1vh;
+  margin: max(1vh, 3px);
+  min-height: 15px;
   transition: .4s ease-in-out;
 }
 
@@ -940,7 +943,7 @@ article .wrapper {
 .license{
   background-color: var(--footer-colour);
   text-align: center;
-  font-size: 0.8vw;
+  font-size: max(0.8vw, 10px);
   padding-bottom: 2px;
   color: #1c1c1c;
 }
