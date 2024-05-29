@@ -13,6 +13,8 @@ function updateProgressTracker(section, link, bottom_borders) {
         var screen_location = (position.top - (window.innerHeight/2) - 85);
         
 
+        /*
+
         if (screen_location < 0){
 
             link.style.scale = 1;
@@ -24,6 +26,9 @@ function updateProgressTracker(section, link, bottom_borders) {
             bottom_borders.style.borderImage = "linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 1";
 
         }
+*/
+
+        return screen_location
 
     }
 
@@ -57,7 +62,8 @@ article.addEventListener('scroll', event =>{
     updateProgressTracker(sections[5], links[5], bottom_borders[5]);
     updateProgressTracker(sections[6], links[6], bottom_borders[6]);
     updateProgressTracker(sections[7], links[7], bottom_borders[7]);
-    updateProgressTracker(sections[8], links[8], bottom_borders[8]);
+    var tempo = updateProgressTracker(sections[8], links[8], bottom_borders[8]);
+    console.log(tempo)
     updateProgressTracker(sections[9], links[9], bottom_borders[9]);
 
 

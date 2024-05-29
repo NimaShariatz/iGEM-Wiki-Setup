@@ -520,6 +520,7 @@ article .wrapper {
 .submenu .col-3 ul li{
     margin: 12px 0;/*margin for points in dropdown menu*/
     position:relative;
+    font-size: 12px;
 }
 
 
