@@ -880,7 +880,7 @@ article .wrapper {
   color: #1c1c1c;
   margin-top: 4%;
   align-self: center;
-  font-size: min(0.9vw, 2vh);
+  font-size: max(min(0.9vw, 2vh), 0.5rem);
 }
 
 .footer-text-holder{
@@ -891,7 +891,7 @@ article .wrapper {
   margin-right: auto;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   .info-text {
     display: none;
   }
@@ -922,14 +922,14 @@ article .wrapper {
 
 .social-logos a:hover img {
   transform: scale(1.1);
-  animation: tilt 1s infinite;
+  animation: tilt 0.55s infinite;
 }
 
 @keyframes tilt {
   0% { transform: rotate(0deg); }
-  25% { transform: rotate(-8deg); }
+  25% { transform: rotate(-7deg); }
   50% { transform: rotate(0deg); }
-  75% { transform: rotate(8deg); }
+  75% { transform: rotate(7deg); }
   100% { transform: rotate(0deg); }
 }
 
