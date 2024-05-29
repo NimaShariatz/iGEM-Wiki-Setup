@@ -18,7 +18,7 @@ buttons.forEach(btn => {
         ripples.style.left = xCoord + 'px';
         ripples.style.top = yCoord + 'px';
         //make child of current button element
-        console.log(xCoord, yCoord);
+        //console.log(xCoord, yCoord);
         this.appendChild(ripples);
 
         //destroy ripple element after x milliseconds

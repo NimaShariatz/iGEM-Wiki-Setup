@@ -14,7 +14,7 @@ function ImageFinder(image, figcaption) {
         if (screen_location < 0){
         
             image.style.borderColor="var(--accordion-hover-colour)";
-            image.style.backgroundColor="var(--progressTracker-colour)";
+            image.style.backgroundColor="var(--image-background-colour)";
             image.style.borderRadius="3px 3px 0 0";
 
             figcaption.style.backgroundColor="var(--progressTracker-colour)";
