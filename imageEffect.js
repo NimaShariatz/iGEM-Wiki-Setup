@@ -7,7 +7,7 @@ function ImageFinder(image, figcaption) {
     if(image!=null || figcaption!=null){
         
         var position = image.getBoundingClientRect();
-        var screen_location = (position.top - (window.innerHeight/2) - 85);
+        var screen_location = (position.top - (window.innerHeight/2));
         //console.log(screen_location);
 
 

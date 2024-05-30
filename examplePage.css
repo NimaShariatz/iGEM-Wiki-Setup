@@ -239,7 +239,7 @@ article {
 article .wrapper {
   margin: auto;
   padding: 3em;
-  padding-right:9em; /*gives whitespace to the right*/
+  padding-right:15em; /*gives whitespace to the right*/
   display:flex;
   padding-left:4em;
 
@@ -852,10 +852,13 @@ article .wrapper {
   border-width: 0px 0 2px 0; 
   border-color:var(--progressTracker-colour);
   transition: 0.7s ease-in-out;
+  max-width: 1500px;
 }
 
 .Images-figCap{
   transition: 0.7s ease-in-out;
+  max-width: 1500px;
+
 }
 
 .footer-info{
