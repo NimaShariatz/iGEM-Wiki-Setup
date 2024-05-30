@@ -76,7 +76,6 @@ bottom_borders = bottom_borders.filter(element => element != null);//filter out 
 
 
 article.addEventListener('scroll', event =>{
-    console.log(window.innerWidth);
     var content0 = updateProgressTracker(sections[0], links[0], bottom_borders[0]);
     var content1 = updateProgressTracker(sections[1], links[1], bottom_borders[1]);
     var content2 = updateProgressTracker(sections[2], links[2], bottom_borders[2]);

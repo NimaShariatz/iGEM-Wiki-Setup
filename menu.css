@@ -107,9 +107,7 @@ a{
   font-weight: bold;
 }
 
-svg{
-    color:var(--text-colour);
-}
+
 
 h3 {
   font-size: 10px;
@@ -246,12 +244,6 @@ article .wrapper {
 
 }
 
-.sub_menu h3{
-  margin: 10px 0;
-}
-
-
-
 
 /*The following are a series of hover effects for the menu. specifically the horizontal line on hover effect*/
 .menu_item-purple, .menu_item-cyan, .menu_item-blue, .menu_item-red, .menu_item-pink{
@@ -347,10 +339,15 @@ article .wrapper {
 
 
 .sub_menu {
-    padding: 10px 0 10px 10px;
-    border-style:solid;
-    border-width: 0 0 0 10px;
+  padding: 10px 0 10px 10px;
+  border-style:solid;
+  border-width: 0 0 0 10px;
     
+}
+
+
+.sub_menu h3{
+  margin: 10px 0;
 }
 
 .sub_menu:nth-child(1){
@@ -537,7 +534,7 @@ article .wrapper {
 }
 
 
-/*THE FOLLOWING ABOVE IS EXCLUSIVELY FOR THE TRADITIONAL HEADER STYLE MENU*/
+
 
 
 
@@ -568,271 +565,11 @@ article .wrapper {
   z-index: 100;
 }
 
-
-
-
-.progressTracker_column{
-  margin-top:20px;
-  width:200px;
-  padding-right:18em;
-  background-color: var(--primary-colour);
-}
-
-.progressTracker_div{
-  padding-inline: 1em;
-  background-color: var(--progressTracker-colour);
-  padding-bottom: 1em;
-  border-radius: 5px;
-  
-}
-
-.progressTracker_Link{
-  max-width:150px;
-  font-weight: bold;
-  scale:0.8;
-  opacity: 0.7;
-  transition: 320ms;
-  background-color: transparent;
-}
-
-
-#bottom_border1, #bottom_border2, #bottom_border3, #bottom_border4, #bottom_border5, #bottom_border6, #bottom_border7
-, #bottom_border8, #bottom_border9, #bottom_border10 {
-  border-style:solid;
-  border-width: 0 0 3px 0;
-  border-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 1;
-  transition: all 1s ease-in-out;
-
-
-}
-
-
-/*the stuff below is related to on hover link effect in paragraphs*/
-.paragraph_link_purple{
-  border-style:solid;
-  border-color:rgba(192, 111, 224, 0.5);
-  border-width: 0px 0px 2px 0px;
-  transition: all 300ms ease-in-out;
-}
-
-
-.paragraph_link_purple:hover{
-  border-color:var(--purple);
-  background-color: rgba(192, 111, 224, 0.1);
-  box-shadow: 0 -5px 10px 2px rgba(192, 111, 224, 0.1);
-}
-
-
-.paragraph_link_cyan{
-  border-style:solid;
-  border-color:rgba(42, 224, 200, 0.5);
-  border-width: 0px 0px 2px 0px;
-  transition: all 300ms ease-in-out;
-}
-
-.paragraph_link_cyan:hover{
-  border-color:var(--cyan);
-  background-color: rgba(42, 224, 200, 0.1);
-  box-shadow: 0 -5px 10px 2px rgba(42, 224, 200, 0.1);
-}
-
-.paragraph_link_blue{
-  border-style:solid;
-  border-color:rgba(30, 139, 195, 0.5);
-  border-width: 0px 0px 2px 0px;
-  transition: all 300ms ease-in-out;
-}
-
-.paragraph_link_blue:hover{
-  border-color:var(--blue);
-  background-color: rgba(30, 139, 195, 0.1);
-  box-shadow: 0 -5px 10px 2px rgba(30, 139, 195, 0.1);
-}
-
-
-.paragraph_link_red{
-  border-style:solid;
-  border-color:rgba(206, 0, 38, 0.5);
-  border-width: 0px 0px 2px 0px;
-  transition: all 300ms ease-in-out;
-}
-
-
-.paragraph_link_red:hover{
-  border-color:var(--red);
-  background-color: rgba(206, 0, 38, 0.1);
-  box-shadow: 0 -5px 10px 2px rgba(206, 0, 38, 0.1);
-}
-
-.paragraph_link_pink{
-  border-style:solid;
-  border-color:rgba(255, 0, 170, 0.5);
-  border-width: 0px 0px 2px 0px;
-  transition: all 300ms ease-in-out;
-}
-
-
-.paragraph_link_pink:hover{
-  border-color:var(--pink);
-  background-color: rgba(255, 72, 194, 0.1);
-  box-shadow: 0 -5px 10px 2px rgba(255, 0, 170, 0.1);
-}
-
-
 .active-link{/*so whatever page you are in, it will do this to the link corrosponding to it!!!!!!*/
 
   color: var(--accordion-hover-colour)
 }
 
-
-
-/*the stuff above is related to on hover link effect in paragraphs*/
-
-
-
-
-
-
-/*the stuff below is related to the Accordion dropdown. see https://www.w3schools.com/howto/howto_js_accordion.asp on how its done */
-.accordion {
-  background-color: #ccc;
-  color: #1c1c1c;
-  cursor: pointer;
-  padding: 10px;
-  width: 30%;
-  min-width:160px;
-  border: solid;
-  border-width: 0 0 2px 0;
-  border-color:transparent;
-  text-align: left;
-  outline: none;
-  font-weight: bold;
-
-  transition: 0.4s;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.active, .accordion:hover {
-  background-color: var(--accordion-hover-colour);
-  border: solid;
-  border-width: 0 0 2px 0;
-  border-color:#626262;
-  width: 100%;
-
-}
-
-.accordion:after {
-  content: '\002B';
-  color: #1c1c1c;
-  font-weight: bold;
-  margin-left: 5px;
-  animation: ripple 0.5s linear;
-}
-
-.active:after {
-  content: "\2212";
-  color: var(--text-colour);
-
-}
-
-.accordion-span{
-  position: absolute;
-  background: var(--primary-colour);
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  border-radius: 50%;
-  overflow: hidden;
-  animation: ripple 0.5s linear infinite;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: var(--accordion-colour);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 4px 50px -7px rgba(0, 0, 0, 0.3);
-}
-/*the stuff below is related to the Accordion dropdown*/
-
-
-
-.bottom_Header{
-  width:100%;
-  height:15vh;
-  background-color:var(--footer-colour);
-  border-color:var(--submenu-border);/*border color of traditional header*/
-  border-style: solid;
-  border-width: 2px 0 0 0;/*only have a bottom border color*/
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  z-index: 1;
-  min-height: 70px;
-}
-
-
-@keyframes ripple{
-  0%{
-    width: 0px;
-    height: 0px;
-    opacity: 0.5;
-  }
-  100%{
-    width: 200px;
-    height: 200px;
-    opacity: 0;
-  }
-}
-
-/*stuff for the sponsor logos*/
-.logos{
-  overflow: hidden;
-  white-space: nowrap;
-  align-items: center;
-  margin-left: max(var(--logo-margin), 150px);
-}
-
-
-.logos-slide {
-  display: inline-block;
-  animation: 80s carousel infinite linear;
-  padding: 20px 0;
-}
-
-.logos-slide img{
-  height: 6vh;
-  margin-right: 35px;
-  transition: all 300ms linear;
-  min-height: 30px;
-}
-
-.logos-slide img:hover{
-  transform: scale(1.1);
-}
-
-@keyframes carousel {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.footer-container {
-  position: relative;
-  z-index: 0;
-}
-
-/* stuff for the socials*/
-
-.no-transition {
-  transition: none !important;
-}
 
 #toggle-mode{
   cursor: pointer;
@@ -846,108 +583,6 @@ article .wrapper {
 
 
 
-.Images-paragraph_setup{
-  height:auto; 
-  border-style:dashed; 
-  border-width: 0px 0 2px 0; 
-  border-color:var(--progressTracker-colour);
-  transition: 0.7s ease-in-out;
-  max-width: 1500px;
-}
 
-.Images-figCap{
-  transition: 0.7s ease-in-out;
-  max-width: 1500px;
 
-}
 
-.footer-info{
-  position: absolute;
-  background-color: var(--footer-colour);
-  width: max(var(--logo-margin), 150px);
-  height: 100%;
-  overflow: hidden;
-  border-color:var(--submenu-border);/*border color of traditional header*/
-  border-style: solid;
-  border-width: 2px 0 0 0;
-  display: flex;
-}
-
-.footer-info img{
-  height: 65%;
-  width: auto;
-  align-self: center;
-  margin-left: 5%;
-}
-
-.info-text{
-  color: #1c1c1c;
-  margin-top: 4%;
-  align-self: center;
-  font-size: max(min(0.9vw, 2vh), 0.5rem);
-}
-
-.footer-text-holder{
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 800px) {
-  .info-text {
-    display: none;
-  }
-}
-
-.social-logos{
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-items: center;
-}
-.social-logos a{
-  height: 25%;
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  transition: .4s ease-in-out;
-}
-.social-logos a:hover{
-  transform: scale(1.05);
-}
-.social-logos img{
-  height: 3vh;
-  margin: max(1vh, 3px);
-  min-height: 15px;
-  transition: .4s ease-in-out;
-}
-
-.social-logos a:hover img {
-  transform: scale(1.1);
-  animation: tilt 0.55s infinite;
-}
-
-@keyframes tilt {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(-7deg); }
-  50% { transform: rotate(0deg); }
-  75% { transform: rotate(7deg); }
-  100% { transform: rotate(0deg); }
-}
-
-.vertical-line{
-  border-right: 2px solid var(--submenu-border);
-  height: 80%;
-  align-self: center;
-  margin-left: auto;
-}
-
-.license{
-  background-color: var(--footer-colour);
-  text-align: center;
-  font-size: max(0.8vw, 10px);
-  padding-bottom: 2px;
-  color: #1c1c1c;
-}

@@ -1,0 +1,208 @@
+
+
+.progressTracker_column{
+    margin-top:20px;
+    width:200px;
+    padding-right:18em;
+    background-color: var(--primary-colour);
+  }
+  
+  .progressTracker_div{
+    padding-inline: 1em;
+    background-color: var(--progressTracker-colour);
+    padding-bottom: 1em;
+    border-radius: 5px;
+    
+  }
+  
+  .progressTracker_Link{
+    max-width:150px;
+    font-weight: bold;
+    scale:0.8;
+    opacity: 0.7;
+    transition: 320ms;
+    background-color: transparent;
+  }
+  
+  
+  #bottom_border1, #bottom_border2, #bottom_border3, #bottom_border4, #bottom_border5, #bottom_border6, #bottom_border7
+  , #bottom_border8, #bottom_border9, #bottom_border10 {
+    border-style:solid;
+    border-width: 0 0 3px 0;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) 1;
+    transition: all 1s ease-in-out;
+  
+  
+  }
+  
+  
+  /*the stuff below is related to on hover link effect in paragraphs*/
+  .paragraph_link_purple{
+    border-style:solid;
+    border-color:rgba(192, 111, 224, 0.5);
+    border-width: 0px 0px 2px 0px;
+    transition: all 300ms ease-in-out;
+  }
+  
+  
+  .paragraph_link_purple:hover{
+    border-color:var(--purple);
+    background-color: rgba(192, 111, 224, 0.1);
+    box-shadow: 0 -5px 10px 2px rgba(192, 111, 224, 0.1);
+  }
+  
+  
+  .paragraph_link_cyan{
+    border-style:solid;
+    border-color:rgba(42, 224, 200, 0.5);
+    border-width: 0px 0px 2px 0px;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .paragraph_link_cyan:hover{
+    border-color:var(--cyan);
+    background-color: rgba(42, 224, 200, 0.1);
+    box-shadow: 0 -5px 10px 2px rgba(42, 224, 200, 0.1);
+  }
+  
+  .paragraph_link_blue{
+    border-style:solid;
+    border-color:rgba(30, 139, 195, 0.5);
+    border-width: 0px 0px 2px 0px;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .paragraph_link_blue:hover{
+    border-color:var(--blue);
+    background-color: rgba(30, 139, 195, 0.1);
+    box-shadow: 0 -5px 10px 2px rgba(30, 139, 195, 0.1);
+  }
+  
+  
+  .paragraph_link_red{
+    border-style:solid;
+    border-color:rgba(206, 0, 38, 0.5);
+    border-width: 0px 0px 2px 0px;
+    transition: all 300ms ease-in-out;
+  }
+  
+  
+  .paragraph_link_red:hover{
+    border-color:var(--red);
+    background-color: rgba(206, 0, 38, 0.1);
+    box-shadow: 0 -5px 10px 2px rgba(206, 0, 38, 0.1);
+  }
+  
+  .paragraph_link_pink{
+    border-style:solid;
+    border-color:rgba(255, 0, 170, 0.5);
+    border-width: 0px 0px 2px 0px;
+    transition: all 300ms ease-in-out;
+  }
+  
+  
+  .paragraph_link_pink:hover{
+    border-color:var(--pink);
+    background-color: rgba(255, 72, 194, 0.1);
+    box-shadow: 0 -5px 10px 2px rgba(255, 0, 170, 0.1);
+  }
+
+
+
+  .Images-paragraph_setup{
+    height:auto; 
+    border-style:dashed; 
+    border-width: 0px 0 2px 0; 
+    border-color:var(--progressTracker-colour);
+    transition: 0.7s ease-in-out;
+    max-width: 1500px;
+  }
+  
+  .Images-figCap{
+    transition: 0.7s ease-in-out;
+    max-width: 1500px;
+  
+  }
+
+
+
+  
+/*the stuff below is related to the Accordion dropdown. see https://www.w3schools.com/howto/howto_js_accordion.asp on how its done */
+.accordion {
+    background-color: #ccc;
+    color: #1c1c1c;
+    cursor: pointer;
+    padding: 10px;
+    width: 30%;
+    min-width:160px;
+    border: solid;
+    border-width: 0 0 2px 0;
+    border-color:transparent;
+    text-align: left;
+    outline: none;
+    font-weight: bold;
+  
+    transition: 0.4s;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .active, .accordion:hover {
+    background-color: var(--accordion-hover-colour);
+    border: solid;
+    border-width: 0 0 2px 0;
+    border-color:#626262;
+    width: 100%;
+  
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #1c1c1c;
+    font-weight: bold;
+    margin-left: 5px;
+    animation: ripple 0.5s linear;
+  }
+  
+  .active:after {
+    content: "\2212";
+    color: var(--text-colour);
+  
+  }
+  
+  .accordion-span{
+    position: absolute;
+    background: var(--primary-colour);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: ripple 0.5s linear infinite;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: var(--accordion-colour);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 50px -7px rgba(0, 0, 0, 0.3);
+  }
+  /*the stuff below is related to the Accordion dropdown*/
+  
+  
+  @keyframes ripple{
+    0%{
+      width: 0px;
+      height: 0px;
+      opacity: 0.5;
+    }
+    100%{
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+  }
+
