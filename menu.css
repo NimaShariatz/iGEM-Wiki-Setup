@@ -16,7 +16,7 @@
   --menu-colour: var(--primary-colour);
   --progressTracker-colour:rgba(187, 188, 173, 0.2);
   --image-background-colour: rgba(187, 188, 173, 0.2);
-  --footer-colour: #ffd991;
+  --footer-colour: #ffd568;
 
   
   --purple: #9e19d3;
@@ -28,7 +28,6 @@
   --logo-margin: 22%;
 
 }
-/*possible footer colour #ffd568*/
 .dark-theme{
   --primary-colour: #264439;
   --text-colour: #F4F5FA;
