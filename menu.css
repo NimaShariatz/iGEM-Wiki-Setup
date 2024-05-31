@@ -254,8 +254,7 @@ article .wrapper {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;/*how thick the horizontal line effect is*/
-  border-radius: 1px;
+  height: 2px;/*how thick the horizontal line effect is*/
   background-color: var(--purple);
   bottom: 0px;/*verticle spacing of the horizontal line effect*/
   left: 0;
@@ -269,8 +268,7 @@ article .wrapper {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;/*how thick the horizontal line effect is*/
-  border-radius: 1px;
+  height: 2px;/*how thick the horizontal line effect is*/
   background-color: var(--cyan);
   bottom: 0px;/*verticle spacing of the horizontal line effect*/
   left: 0;
@@ -285,8 +283,7 @@ article .wrapper {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;/*how thick the horizontal line effect is*/
-  border-radius: 1px;
+  height: 2px;/*how thick the horizontal line effect is*/
   background-color: var(--blue);
   bottom: 0px;/*verticle spacing of the horizontal line effect*/
   left: 0;
@@ -300,8 +297,7 @@ article .wrapper {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;/*how thick the horizontal line effect is*/
-  border-radius: 1px;
+  height: 2px;/*how thick the horizontal line effect is*/
   background-color: var(--red);
   bottom: 0px;/*verticle spacing of the horizontal line effect*/
   left: 0;
@@ -316,8 +312,7 @@ article .wrapper {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;/*how thick the horizontal line effect is*/
-  border-radius: 1px;
+  height: 2px;/*how thick the horizontal line effect is*/
   background-color: var(--pink);
   bottom: 0px;/*verticle spacing of the horizontal line effect*/
   left: 0;
@@ -466,7 +461,7 @@ article .wrapper {
     pointer-events: none;/*prevents us on clicking the submenus outside of the hover effect*/
     top:33px;/*distance between popup and header*/
     width: 400px;/*size of our dropdown*/
-    height: 170px;/*size of our dropdown*/
+    height: 150px;/*size of our dropdown*/
     margin-left:-160px;/*what i used to try and center the dropdown div on hover. ok for now.*/
     transform:translateY(10px);/*animation of hover menu*/
     transition: all 200ms ease-in;/*animation of hover menu*/
@@ -484,7 +479,7 @@ article .wrapper {
 .submenu .col-3 {
     display:flex;
     gap:40px;
-    border-top: 1px solid var(--submenu-border);
+    border-bottom: 1px solid var(--submenu-border);
 
 }
 
@@ -509,9 +504,14 @@ article .wrapper {
 
 }
 
-.TEXT-project_menu{
-  transition: 10s linear;
+#TEXT-project_menu, #TEXT-wet_labmenu, #TEXT-dry_lab_menu, #TEXT-wet_human_practices_menu, #TEXT-Team_menu{
+  transition : "visibility 0s 0.5s, opacity 0.5s linear";
+  opacity: 0.0;
+  visibility: hidden;
+
 }
+
+
 
 .submenu .col-3 ul li{
     margin: 12px 0;/*margin for points in dropdown menu*/
