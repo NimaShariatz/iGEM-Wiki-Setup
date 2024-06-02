@@ -6,17 +6,17 @@
 
 
 :root{
-  --primary-colour: #fcf6f0;
+  --primary-colour: #fcf1e9;
   --text-colour: #1c1c1c;
   --accordion-colour: rgb(236, 236, 236);
-  --gradient-start: #3b8e40;
-  --gradient-end: #e3b707;
-  --accordion-hover-colour: #e3b707;
+  --gradient-start: #EBD494;
+  --gradient-end: #e5aa7091;
+  --accordion-hover-colour: #EBD494;
   --submenu-border: rgba(2,48,71,0.2);
-  --menu-colour: var(--primary-colour);
-  --progressTracker-colour:rgba(187, 188, 173, 0.2);
+  --menu-colour: #fcf6f0;
+  --progressTracker-colour:#fcf6f0;
   --image-background-colour: rgba(187, 188, 173, 0.2);
-  --footer-colour: #ffd568;
+  --footer-colour:#e5aa7091;
 
   
   --purple: #9e19d3;
@@ -415,11 +415,11 @@ article .wrapper {
     max-width:100%;
     z-index: 10;
 
-    box-shadow: 0 4px 30px -7px rgba(0, 0, 0, 0.2);
-    background-color: var(--menu-colour);
+    box-shadow: none;
+    background-color: #fcf1e9;
 
 
-    border-color:var(--submenu-border);/*border color of traditional header*/
+    border-color:transparent;/*border color of traditional header*/
     border-style: solid;
     border-width: 0 0 1px 0;/*only have a bottom border color*/
     
@@ -521,7 +521,7 @@ article .wrapper {
 
 
 .menu-Image{
-  filter:grayscale(0.3);
+  filter:grayscale(0.6);
   opacity: 0.7;
   transition: all 150ms linear;
   margin-right:1px;

@@ -40,7 +40,7 @@ function updateProgressTracker(section) {
 function transform(link, bottom_borders){
     link.style.scale = 1;
     link.style.opacity = 1;
-    bottom_borders.style.borderImage = "linear-gradient(to right, #e3b707, #e3b707) 1";
+    bottom_borders.style.borderImage = "linear-gradient(to right, #EBD494, #EBD494) 1";
 
 }
 

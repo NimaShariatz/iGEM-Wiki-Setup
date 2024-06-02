@@ -18,6 +18,7 @@
     <script defer src="imageEffect.js"></script>
     <script defer src="preloader.js"></script>
     <script defer src="activePage.js"></script>
+    <script defer src="menuTransition.js"></script>
 
 
 
@@ -108,15 +109,16 @@
         <div id="jump_for_bottomHeader" class="mega-menu-container">
 
     
-            <nav class="mega-menu">
+            <nav id="traditionalheader" class="mega-menu">
                 <ul>
                     
                     <div style="display:flex; flex-direction:row;">
+                        <!--
                         <div>
                             <a href="T">
                                 <img style="width:30px; height:auto; margin-top:5px;" src="images/Logo Final.png">
                             </a>
-                        </div>
+                        </div>-->
                         <!--
                         <div>
                             <a href="T">
@@ -454,11 +456,11 @@
         <div style="max-width: 1500px;">
 
             
-            <h1 style="font-size:40px; padding-top:30px;">Project Description</h1>
+            <h1 style="font-size:40px; padding-top:30px; background-color:#fcf6f0; border-radius:5px; box-shadow:0 4px 30px -7px rgba(0, 0, 0, 0.2);">   &nbsp Project Description</h1>
             
             
 
-
+            <div style="background-color:#fcf6f0; padding-inline:10px; border-radius:5px; padding-bottom:50px; box-shadow:0 4px 30px -7px rgba(0, 0, 0, 0.2);">
             <p id="HeaderLink1" style="margin-bottom:80px;"></p>
             <h1 id="bottom_border1">Abstract</h1>
             <p>Fungal pathogens pose a significant challenge to the agricultural industry and can cause extensive crop
@@ -660,6 +662,8 @@
               fungal targets and theoretically detect other crop pathogens. As such, our project opens a whole realm of
               possibilities for pathogen detection in the world of agriculture.
             </p>
+
+            </div>
 
             <button class="accordion" style="margin-top: 200px;">References</button>
             <div class="panel">
