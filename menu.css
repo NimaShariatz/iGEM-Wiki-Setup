@@ -14,9 +14,9 @@
   --accordion-hover-colour: #e3b707;
   --submenu-border: rgba(2,48,71,0.2);
   --menu-colour: var(--primary-colour);
-  --progressTracker-colour:rgba(187, 188, 173, 0.2);
+  --progressTracker-colour:#fffdfa;
   --image-background-colour: rgba(187, 188, 173, 0.2);
-  --footer-colour: #ffd568;
+  --footer-colour: #ffdaa9;
 
   
   --purple: #9e19d3;
@@ -87,7 +87,7 @@ body {
   font-family: "Signika", "Lato", Arial, Helvetica, sans-serif;
   background-color: var(--text-colour);
   color: var(--text-colour);
-  font-size: 13px;
+  font-size: 14.5px;
 }
 
 a{
