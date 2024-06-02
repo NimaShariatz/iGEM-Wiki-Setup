@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Signika");
-
-
-
-
+@font-face { /*see https://www.youtube.com/watch?v=zK-yy6C2Nck&t=108s*/
+  font-family: 'Kanit';
+  font-weight: 400;
+  src: url('font_assets/kanit-regular-webfont.woff2') format('woff2'),
+      url('font_assets/kanit-regular-webfont.woff') format('woff');
+}
 
 
 :root{
@@ -84,10 +85,10 @@ body {
   overflow: auto;
   display: flex;
   line-height: 1.5;
-  font-family: "Signika", "Lato", Arial, Helvetica, sans-serif;
+  font-family: "Kanit", "Lato";
   background-color: var(--text-colour);
   color: var(--text-colour);
-  font-size: 13px;
+  font-size: 15px;
 }
 
 a{
@@ -428,7 +429,7 @@ article .wrapper {
 
 .mega-menu > ul {
     display:flex;
-    max-width:800px;
+    max-width:820px;/*Change this if you change font size!!!!*/
     margin:0 auto;
     justify-content: center; /*Horizontal alignment*/
     align-items: center; /*verticle alignment*/
@@ -460,8 +461,8 @@ article .wrapper {
     position:absolute;
     pointer-events: none;/*prevents us on clicking the submenus outside of the hover effect*/
     top:33px;/*distance between popup and header*/
-    width: 400px;/*size of our dropdown*/
-    height: 150px;/*size of our dropdown*/
+    width: 410px;/*size of our dropdown*/
+    height: 160px;/*size of our dropdown*/
     margin-left:-160px;/*what i used to try and center the dropdown div on hover. ok for now.*/
     transform:translateY(10px);/*animation of hover menu*/
     transition: all 200ms ease-in;/*animation of hover menu*/
