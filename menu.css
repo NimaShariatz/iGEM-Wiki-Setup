@@ -30,19 +30,19 @@
 
 }
 .dark-theme{
-  --primary-colour: #264439;
-  --text-colour: #F4F5FA;
+  --primary-colour: #1b2941;
+  --text-colour: #ebd595;
   --accordion-colour: #455b55;
   --gradient-start: #e3b707;
   --gradient-end: #e3b707;
   --accordion-hover-colour: #e3b707;
   --submenu-border: rgba(0, 0, 0, 0.2);
-  --menu-colour: #213930;
+  --menu-colour: #084064;
   --progressTracker-colour: var(--menu-colour);
   --image-background-colour: var(--accordion-colour);
-  --footer-colour: #e3b707;
+  --footer-colour: #ffe6a7;
 }
-
+/*  --footer-colour: #ffe6a7; looks good*/
 
 /* for scrollbar*/
 ::-webkit-scrollbar {
