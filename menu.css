@@ -13,6 +13,7 @@
   --gradient-start: #3b8e40;
   --gradient-end: #e3b707;
   --accordion-hover-colour: #e3b707;
+  --headermenu-border:rgba(2,48,71,0.2);
   --submenu-border: rgba(2,48,71,0.2);
   --menu-colour: var(--primary-colour);
   --progressTracker-colour:rgba(187, 188, 173, 0.2);
@@ -37,7 +38,8 @@
   --gradient-start: #e3b707;
   --gradient-end: #e3b707;
   --accordion-hover-colour: #e3b707;
-  --submenu-border: rgba(0, 0, 0, 0.2);
+  --headermenu-border:transparent;
+  --submenu-border: #ebd595;
   --menu-colour: #131f33;
   --progressTracker-colour: #084064;
   --image-background-colour: #084064;
@@ -377,7 +379,11 @@ article .wrapper {
 /*THE FOLLOWING BELOW IS EXCLUSIVELY FOR THE TRADITIONAL HEADER STYLE MENU*/
 
 .mega-menu-container{
-    color: var(--text-colour);/*font color*/
+  color: var(--text-colour);/*font color*/
+}
+
+#traditionalheader{
+  transition: 500ms linear;
 }
 
 
@@ -418,7 +424,7 @@ article .wrapper {
     background-color: var(--menu-colour);
 
 
-    border-color:var(--submenu-border);/*border color of traditional header*/
+    border-color:var(--headermenu-border);/*border color of traditional header*/
     border-style: solid;
     border-width: 0 0 1px 0;/*only have a bottom border color*/
     
