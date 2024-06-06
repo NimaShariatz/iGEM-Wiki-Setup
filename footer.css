@@ -113,9 +113,7 @@
     transition: .4s ease-in-out;
 }
 
-  .social-logos a:hover{
-    transform: scale(1.05);
-}
+
 
   .social-logos img{
     height: 3vh;
@@ -126,7 +124,7 @@
   
 .social-logos a:hover img {
     transform: scale(1.1);
-    animation: tilt 0.55s infinite;
+    animation: tilt 0.35s infinite;
 }
   
 @keyframes tilt {

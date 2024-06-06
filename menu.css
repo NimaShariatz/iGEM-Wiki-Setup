@@ -388,7 +388,6 @@ article .wrapper {
 
 .mega-menu-container a{
     display:inline-block;
-    font-weight:bold;
     transition: all 150ms linear;
 }
 
@@ -396,9 +395,7 @@ article .wrapper {
   text-shadow: 1px 1px 5px rgba(90, 96, 90, 0.4);
 }
 
-.submenu-column a:hover{/*so for links just inside the hover menus....*/
-  transform: scale(1.08);
-}
+
 
 .mega-menu-container ul{
     padding:0;
@@ -418,7 +415,6 @@ article .wrapper {
     max-width:100%;
     z-index: 10;
 
-    box-shadow: 0 4px 30px -7px rgba(0, 0, 0, 0.2);
     background-color: var(--menu-colour);
 
 
@@ -443,7 +439,6 @@ article .wrapper {
 
 .mega-menu-container .menu-title{
     padding: 10px 5px;
-    font-weight: bold;
 }
 
 .mega-menu .menu-title{
