@@ -12,14 +12,17 @@
   --accordion-colour: rgb(236, 236, 236);
   --gradient-start: #3b8e40;
   --gradient-end: #e3b707;
-  --accordion-hover-colour: #e3b707;
+  --accordion-hover-colour: #ffe6a7;
   --headermenu-border:rgba(2,48,71,0.2);
   --submenu-border: rgba(2,48,71,0.2);
   --menu-colour: var(--primary-colour);
+  --submenu-colour: var(--menu-colour);
   --progressTracker-colour:rgba(187, 188, 173, 0.2);
   --image-background-colour: rgba(187, 188, 173, 0.2);
   --footer-colour: #ffe6a7;
   --footer-text-colour: #1c1c1c;
+  --accordion-stationary-colour: rgba(187, 188, 173, 0.2);
+  --accordion-text-colour: #1c1c1c;
 
   
   --purple: #9e19d3;
@@ -32,19 +35,23 @@
 
 }
 .dark-theme{
-  --primary-colour: #1b2941;
+  --primary-colour: #1b2541;
   --text-colour: #ebd595;
-  --accordion-colour: #455b55;
+  --accordion-colour: rgba(255, 255, 255, 0.06);
   --gradient-start: #e3b707;
   --gradient-end: #e3b707;
-  --accordion-hover-colour: #e3b707;
+  --accordion-hover-colour: #ebd595;
   --headermenu-border:transparent;
   --submenu-border: #ebd595;
   --menu-colour: #131f33;
-  --progressTracker-colour: #084064;
-  --image-background-colour: #084064;
+  --submenu-colour: #1b2541;
+  --progressTracker-colour: rgba(255, 255, 255, 0.06);
+  --image-background-colour: rgba(255, 255, 255, 0.06);
   --footer-colour: #ffe6a7;
   --footer-text-colour: #1c1c1c;
+  --accordion-stationary-colour: rgba(255, 255, 255, 0.06);
+  --accordion-text-colour: #ffe6a7;
+  --accordion-hover-text-colour: #1c1c1c;
 }
 /*  --footer-colour: #ffe6a7; looks good*/
 
@@ -92,7 +99,7 @@ body {
   font-family: "mukta", "Lato";
   background-color: var(--text-colour);
   color: var(--text-colour);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 a{
@@ -489,7 +496,7 @@ article .wrapper {
 
 
 .submenu {
-    background-color: var(--menu-colour);
+    background-color: var(--submenu-colour);
     padding:16px 24px;
     margin-top:10px;
     left:0;
@@ -563,7 +570,7 @@ article .wrapper {
   --scrollProgress: 0%;
   height: 3px;
   width: var(--scrollProgress);
-  background: linear-gradient(0.25turn, var(--gradient-start), var(--gradient-end));
+  background: linear-gradient(0.25turn, var(--gradient-end), var(--gradient-end));
   position: fixed;
   z-index: 100;
 }

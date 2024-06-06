@@ -140,8 +140,8 @@
   
 /*the stuff below is related to the Accordion dropdown. see https://www.w3schools.com/howto/howto_js_accordion.asp on how its done */
 .accordion {
-    background-color: #ccc;
-    color: #1c1c1c;
+    background-color: var(--accordion-stationary-colour);
+    color: var(--accordion-text-colour);
     cursor: pointer;
     padding: 10px;
     width: 30%;
@@ -165,12 +165,13 @@
     border-width: 0 0 2px 0;
     border-color:#626262;
     width: 100%;
+    color: var(--accordion-hover-text-colour);
   
   }
   
   .accordion:after {
     content: '\002B';
-    color: #1c1c1c;
+    color: var(--accordion-text-colour);
     font-weight: bold;
     margin-left: 5px;
     animation: ripple 0.5s linear;
@@ -178,7 +179,7 @@
   
   .active:after {
     content: "\2212";
-    color: var(--text-colour);
+    color: var(--accordion-hover-text-colour);
   
   }
   
