@@ -6,7 +6,7 @@ document.getElementById("TEXT-dry_lab_menu"), document.getElementById("TEXT-wet_
 
 
 
-var changed_text = ["A general outline of the project with emphasis on agriculture, crop infections, nanobodies and the relevancy of our research to this topic"  
+var changed_text = ["A an outline of the project with emphasis on agriculture, crop infections, nanobodies and the relevancy of our research"  
 ];
 
 
