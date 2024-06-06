@@ -81,6 +81,7 @@
     margin-top: 4%;
     align-self: center;
     font-size: max(min(0.9vw, 2vh), 0.5rem);
+    color: var(--footer-text-colour);
 }
   
 .footer-text-holder{

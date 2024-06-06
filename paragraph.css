@@ -12,7 +12,11 @@
     background-color: var(--progressTracker-colour);
     padding-bottom: 1em;
     border-radius: 5px;
-  
+    display:flex; 
+    flex-direction:column; 
+    position:fixed; 
+    padding-top:5px; 
+    margin-top:5px;
   }
   
   .progressTracker_Link{
@@ -213,3 +217,16 @@
     }
   }
 
+.page-up{
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  color: var(--footer-text-colour)
+}
+
+.page-up img{
+  height: 30px;
+}

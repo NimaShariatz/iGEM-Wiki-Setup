@@ -18,6 +18,7 @@
   --progressTracker-colour:rgba(187, 188, 173, 0.2);
   --image-background-colour: rgba(187, 188, 173, 0.2);
   --footer-colour: #ffe6a7;
+  --footer-text-colour: #1c1c1c;
 
   
   --purple: #9e19d3;
@@ -37,10 +38,11 @@
   --gradient-end: #e3b707;
   --accordion-hover-colour: #e3b707;
   --submenu-border: rgba(0, 0, 0, 0.2);
-  --menu-colour: #084064;
-  --progressTracker-colour: var(--menu-colour);
-  --image-background-colour: var(--accordion-colour);
+  --menu-colour: #131f33;
+  --progressTracker-colour: #084064;
+  --image-background-colour: #084064;
   --footer-colour: #ffe6a7;
+  --footer-text-colour: #1c1c1c;
 }
 /*  --footer-colour: #ffe6a7; looks good*/
 
