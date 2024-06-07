@@ -577,7 +577,9 @@ article .wrapper {
 
 .active-link{/*so whatever page you are in, it will do this to the link corrosponding to it!!!!!!*/
 
-  color: var(--accordion-hover-colour)
+  color: var(--gradient-end);
+  font-weight: 200;
+  font-size: 14px;
 }
 
 
