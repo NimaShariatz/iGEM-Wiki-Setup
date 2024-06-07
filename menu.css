@@ -10,7 +10,6 @@
   --primary-colour: #fcf6f0;
   --text-colour: #1c1c1c;
   --accordion-colour: rgb(236, 236, 236);
-  --gradient-start: #3b8e40;
   --gradient-end: #e3b707;
   --accordion-hover-colour: #ffe6a7;
   --headermenu-border:rgba(2,48,71,0.2);
@@ -38,7 +37,6 @@
   --primary-colour: #1b2541;
   --text-colour: #ebd595;
   --accordion-colour: rgba(255, 255, 255, 0.06);
-  --gradient-start: #e3b707;
   --gradient-end: #e3b707;
   --accordion-hover-colour: #ebd595;
   --headermenu-border:transparent;
@@ -570,7 +568,7 @@ article .wrapper {
   --scrollProgress: 0%;
   height: 3px;
   width: var(--scrollProgress);
-  background: linear-gradient(0.25turn, var(--gradient-end), var(--gradient-end));
+  background-color:var(--gradient-end);
   position: fixed;
   z-index: 100;
 }
